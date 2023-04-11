@@ -4,7 +4,7 @@
   "type": "module",
   "description": "YidaozhanYa's homepage",
   "scripts": {
-    "dev": "cd src && live-server --port=8080 --no-browser --entry-file=index.html",
+    "dev": "cd src && live-server --port=8080 --no-browser --entry-file=index.html --mount=/fonts:../fonts",
     "build": "node build.js"
   },
   "author": "YidaozhanYa",
