@@ -3,9 +3,9 @@
 
 @font-face {
     font-family: "Smiley Sans Oblique";
-    src: url("fonts/SmileySans-Oblique.woff2") format("woff2"), /* NEWEST AND HOTTEST browsers */
-    url("fonts/SmileySans-Oblique.woff") format("woff"), /* Dickful browsers */
-    url("fonts/SmileySans-Oblique.ttf") format("truetype"); /* Super dickful browsers */
+    src: url("/fonts/SmileySans-Oblique.woff2") format("woff2"), /* NEWEST AND HOTTEST browsers */
+    url("/fonts/SmileySans-Oblique.woff") format("woff"), /* Dickful browsers */
+    url("/fonts/SmileySans-Oblique.ttf") format("truetype"); /* Super dickful browsers */
     font-style: normal;
     font-weight: normal;
 }

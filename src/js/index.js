@@ -94,4 +94,6 @@ const init = () => {
     initRss()
 }
 
-init()
+window.onload = () => {
+    init()
+}
