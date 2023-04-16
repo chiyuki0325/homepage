@@ -14,13 +14,17 @@ const bg = [
 // fake jq
 const $ = (selector) => document.querySelector(selector)
 
-const initBg = () => {
+function showBody() {
+    $('#mainOuter').style.opacity = '1'
+}
+
+function initBg() {
     // 加载背景图
     const bgUrl = bg[Math.floor(Math.random() * bg.length)]
     $('#bg').style.backgroundImage = `url(${bgUrl})`
 }
 
-const initHeader = () => {
+function initHeader() {
     // 头像点击事件
     $('#avatar').addEventListener('click', function () {
         if (this.getAttribute('data-rotating') === 'true') {
@@ -37,7 +41,7 @@ const initHeader = () => {
     })
 }
 
-const initRss = () => {
+function initRss() {
     const RssElement = (title, date, link) => {
         const cA = (tagName) => document.createElement(tagName)
         document.createElement('div')
@@ -61,9 +65,10 @@ const initRss = () => {
     xhr.send()
     xhr.onload = () => {
         const rssRoot = $('#rss')
+        rssRoot.innerHTML = ''
         const doc = (new DOMParser()).parseFromString(xhr.responseText, 'text/xml')
         const items = doc.querySelectorAll('entry')
-        for (let i = 0; i < 6; i++) {
+        const loadRssItem = (i) => {
             const item = items[i]
             const rssElement = RssElement(
                 item.querySelector('title').textContent,
@@ -71,24 +76,129 @@ const initRss = () => {
                 item.querySelector('link').getAttribute('href')
             )
             rssRoot.appendChild(rssElement)
+            setTimeout(
+                () => {
+                    rssElement.style.transform = 'scaleY(1) translateY(0)'
+                },
+                100
+            )
+        }
+        let count = -1
+        const intervalId = setInterval(() => {
+            count++
+            if (count <= 5) {
+                loadRssItem(count)
+            } else {
+                clearInterval(intervalId);
+            }
+        }, 100);
+    }
+}
+
+function initComment() {
+    if ($('#containerComments').getAttribute('data-loaded') === 'true') return
+    const scriptLeanCloud = document.createElement('script')
+    scriptLeanCloud.src = 'https://blog.yidaozhan.top/cdn/js/av-min.js'
+    const scriptValine = document.createElement('script')
+    scriptValine.src = 'https://blog.yidaozhan.top/cdn/js/Valine.mod.js'
+    const styleValine = document.createElement('link')
+    styleValine.rel = 'stylesheet'
+    styleValine.href = '/css/valine.css'
+    document.body.appendChild(scriptLeanCloud)
+    scriptLeanCloud.onload = () => {
+        document.head.appendChild(styleValine)
+        styleValine.onload = () => {
+            document.body.appendChild(scriptValine)
+            scriptValine.onload = () => {
+                const getEmojiMaps = () => {
+                    let i;
+
+                    function emoji(path, idx, ext) {
+                        return path + "/" + path + "-" + idx + "." + ext;
+                    }
+
+                    const emojiMaps = {};
+                    for (i = 1; i <= 54; i++) {
+                        emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
+                    }
+                    for (i = 1; i <= 101; i++) {
+                        emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
+                    }
+                    for (i = 1; i <= 4; i++) {
+                        emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
+                    }
+                    return emojiMaps;
+                }
+                (() => {
+                    (new Valine).init(Object.assign({
+                        js: "https://blog.yidaozhan.top/cdn/js/Valine.mod.js",
+                        appId: "zoX8kazyGBliRB8slCeYbOMI-MdYXbMMI",
+                        appKey: "ayoqJFfEYQj3teSHqfK03JJo",
+                        placeholder: "📨 快发条评论吧 (`･ω･´)ฅ",
+                        requiredFields: ["nick", "mail"],
+                        enableQQ: !0,
+                        recordIP: !1,
+                        avatar: "robohash",
+                        pageSize: 10,
+                        lang: "zh-cn",
+                        highlight: !0,
+                        mathJax: !1,
+                        tagMeta: ["博主", "小伙伴", "访客"],
+                        metaPlaceholder: {
+                            nick: "📋️ 昵称/QQ",
+                            mail: "📪 邮箱",
+                            link: "🔗 网址(https://)"
+                        },
+                        master: ["6783037F2DF30EAB99F9FC256157D875"],
+                        friends: ["6783037F2DF30EAB99F9FC256157D875"],
+                        meta: ["nick", "mail"],
+                        serverURLs: "https://valine-api.yidaozhan.top"
+                    }, {
+                        el: "#valine",
+                        path: "homepage",
+                        placeholder: "📨 快发条评论吧 (`･ω･´)ฅ",
+                        emojiCDN: "https://blog.yidaozhan.top/cdn/emoji/",
+                        emojiMaps: getEmojiMaps()
+                    }))
+                })()
+                $('#containerComments').setAttribute('data-loaded', 'true')
+            }
         }
     }
 }
 
-const tabClick = (tabId) => {
+function tabClick(tabId) {
     // 切换标签
     for (const tab of $('#tabs').children) {
         tab.classList.remove('tabActive')
     }
     for (const container of $('#containers').children) {
-        container.style.display = 'none'
+        container.style.opacity = '0'
+        setTimeout(() => {
+            container.style.display = 'none'
+        }, 100)
     }
     $(`#tab${tabId}`).classList.add('tabActive')
     const activeContainer = $(`#container${tabId}`)
-    activeContainer.style.display = 'block'
+    setTimeout(() => {
+        activeContainer.style.display = 'block'
+        setTimeout(() => {
+
+            activeContainer.style.opacity = '1'
+        }, 100)
+    }, 100)
 }
 
-const init = () => {
+function jumpToBlog() {
+    window.open('https://blog.yidaozhan.top')
+}
+
+function jumpToFiles() {
+    window.open('https://file.yidaozhan.top')
+}
+
+function init() {
+    showBody()
     initBg()
     initHeader()
     initRss()

@@ -1,6 +1,13 @@
 * {
     --fluent-theme-color: #0067c0;
     color: #000;
+    font-size: 18px;
+}
+
+@media (max-width: 1000px) {
+    * {
+        font-size: 16px;
+    }
 }
 
 #bg {
@@ -37,6 +44,7 @@ body {
     display: flex;
     justify-content: center;
     height: 100%;
+    transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (max-width: 1000px) {
@@ -128,6 +136,7 @@ body {
     margin-top: 0.5rem;
     margin-right: 0.5rem;
     margin-left: 0.5rem;
+    transition: opacity 0.1s ease-in-out;
 }
 
 .container li {
@@ -168,6 +177,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 0.5rem;
+    transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scaleY(0) translateY(-1rem);
 }
 
 .rssTitle {
@@ -182,4 +193,33 @@ body {
     width: 1rem;
     top: 0.2rem;
     position: relative;
+}
+
+svg.loading {
+    display: block;
+    color: #6f7173;
+    z-index: -1;
+    width: 100%;
+    height: 2rem;
+    margin: auto;
+    animation: spin infinite 2s linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#containerComments {
+    max-width: 70%;
+}
+
+@media (max-width: 1000px) {
+    #containerComments {
+        max-width: 100%;
+    }
 }

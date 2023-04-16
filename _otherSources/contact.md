@@ -1,5 +1,0 @@
-[![Telegram:YidaozhanYa](https://img.shields.io/badge/Telegram-YidaozhanYa-28a8ea?logo=telegram)](https://t.me/YidaozhanYa)
-[![Bilibili:是一刀斩哒](https://img.shields.io/badge/Bilibili-是一刀斩哒-ff6699?logo=bilibili)](https://space.bilibili.com/485832788)
-![QQ:920064067](https://img.shields.io/badge/QQ群-920064067-faad01?logo=tencentqq)
-![Discord](https://img.shields.io/badge/Discord-YidaozhanYa%238565-5865f2?logo=discord)
-[![GitHub](https://img.shields.io/badge/GitHub-YidaozhanYa-fff?logo=github)](https://github.com/YidaozhanYa)

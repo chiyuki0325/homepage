@@ -30,7 +30,8 @@ for (const file of [
     'index.html',
     'css/index.css',
     'css/fonts.css',
-    'css/colors.css'
+    'css/colors.css',
+    'css/valine.css'
 ]) {
     minify(`src/${file}`, minifyOptions).then((data) => {
         fs.writeFileSync(`public/${file}`, data)
