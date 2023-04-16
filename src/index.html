@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title>一刀斩の小窝 ~</title>
+    <title></title>
     <meta name="description" content="欢迎来到一刀斩的主页！"/>
     <link rel="icon" href="https://blog.yidaozhan.top/favicon.ico">
     <meta name="ocs-site-verification" content="3814632ce77166572c1d7c31dc43edf9"/>
@@ -18,11 +18,18 @@
 <noscript>
     <h1>你的浏览器不支持 JavaScript ！</h1>
     <p>请使用支持 JavaScript 的浏览器访问本站！</p>
+
+    <h2>Your browser does not support JavaScript!</h2>
+    <p>Please use a browser that supports JavaScript to visit this site!</p>
 </noscript>
 <script src="js/index.js" language="javascript"></script>
+<script src="js/i18n.js" language="javascript"></script>
 <div id="outdatedBrowser" style="display: none">
     <h1>你的浏览器版本过低！</h1>
     <p>请使用支持 ECMAScript 6 的浏览器访问本站！</p>
+
+    <h2>Your browser version is too low!</h2>
+    <p>Please use a browser that supports ECMAScript 6 to visit this site!</p>
 </div>
 <div id="bg"></div>
 <div id="bgLayer"></div>
@@ -33,11 +40,12 @@
             <div id="headerRight">
                 <div id="siteName">一刀斩の小窝</div>
                 <div id="tabs">
-                    <div class="tab tabActive" id="tabHome" onclick="tabClick('Home')">主页</div>
-                    <div class="tab" id="tabBlog" onclick="jumpToBlog()">博客</div>
-                    <div class="tab" id="tabFiles" onclick="jumpToFiles()">网盘</div>
-                    <div class="tab" id="tabComments" onclick="tabClick('Comments');initComment()">留言</div>
-                    <div class="tab" id="tabAbout" onclick="tabClick('About')">关于</div>
+                    <div class="i18n tab tabActive" id="tabHome" onclick="tabClick('Home')" data-i18n="tabs.home"></div>
+                    <div class="i18n tab" id="tabBlog" onclick="jumpToBlog()" data-i18n="tabs.blog"></div>
+                    <div class="i18n tab" id="tabFiles" onclick="jumpToFiles()" data-i18n="tabs.files"></div>
+                    <div class="i18n tab" id="tabComments" onclick="tabClick('Comments');initComment()"
+                         data-i18n="tabs.comments"></div>
+                    <div class="i18n tab" id="tabAbout" onclick="tabClick('About')" data-i18n="tabs.about"></div>
                 </div>
             </div>
         </div>
@@ -45,16 +53,16 @@
             <div class="container" id="containerHome" style="display: block">
                 <div id="containerHomeGrid">
                     <div id="containerHomeLeft">
-                        <div class="biggerText">👋 欢迎来到一刀斩的主页！</div>
+                        <div class="i18n biggerText" data-i18n="main.home.welcome"></div>
                         <ul>
-                            <li> 🏫 居住在辽宁，想长大的普通高二学生</li>
-                            <li> ✏️ 乐于创造、发现和记录</li>
-                            <li> 🐧 使用 Arch Linux 操作系统</li>
-                            <li> 🐍 正在学习 Python 和 JavaScript</li>
-                            <li> 🔄 对未来的方向还很迷茫 … 走一步算一步吧</li>
+                            <li class="i18n" data-i18n="main.home.desc.l1"></li>
+                            <li class="i18n" data-i18n="main.home.desc.l2"></li>
+                            <li class="i18n" data-i18n="main.home.desc.l3"></li>
+                            <li class="i18n" data-i18n="main.home.desc.l4"></li>
+                            <li class="i18n" data-i18n="main.home.desc.l5"></li>
                         </ul>
                         <div class="gap"></div>
-                        <div class="biggerText">☎️ 联系我</div>
+                        <div class="i18n biggerText" data-i18n="main.home.contact"></div>
                         <p>
                             <a href="https://t.me/YidaozhanYa">
                                 <img
@@ -62,17 +70,20 @@
                                         alt="Telegram:YidaozhanYa"/></a>&nbsp;
                             <a href="https://t.me/yidaozhan_channel">
                                 <img
-                                        src="https://img.shields.io/badge/Telegram-频道-28a8ea?logo=telegram"
+                                        data-src="https://img.shields.io/badge/Telegram-{{channel}}-28a8ea?logo=telegram"
+                                        class="imgI18n"
                                         alt="Telegram 频道"/></a>&nbsp;
                             <a
                                     href="https://space.bilibili.com/485832788">
                                 <img
-                                        src="https://img.shields.io/badge/Bilibili-是一刀斩哒-ff6699?logo=bilibili"
+                                        data-src="https://img.shields.io/badge/Bilibili-{{name}}-ff6699?logo=bilibili"
+                                        class="imgI18n"
                                         alt="Bilibili:是一刀斩哒"/></a>&nbsp;
                             <img
-                                    src="https://img.shields.io/badge/QQ群-920064067-faad01?logo=tencentqq"
+                                    data-src="https://img.shields.io/badge/QQ{{group}}-920064067-faad01?logo=tencentqq"
+                                    class="imgI18n"
                                     alt="QQ:920064067"/>
-                            </p>
+                        </p>
                         <p>
                             <img
                                     src="https://img.shields.io/badge/Discord-YidaozhanYa%238565-5865f2?logo=discord"
@@ -85,54 +96,72 @@
                         <div class="biggerText"></div>
                     </div>
                     <div id="containerHomeRight">
-                        <div class="biggerText">📝 最近更新</div>
+                        <div class="i18n biggerText" data-i18n="main.home.recent"></div>
                         <div id="rss">
-                            <svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg>
+                            <svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden"
+                                 viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709">
+                                <path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z"
+                                      p-id="2710"></path>
+                            </svg>
                             <!-- RSS -->
                         </div>
                     </div>
                 </div>
             </div>
             <div class="container" id="containerAbout" style="display: none">
-                <div class="biggerText">💖 关于我</div>
+                <div class="i18n biggerText" data-i18n="main.about.about"></div>
                 <ul>
-                    <li>🤗 想长大的普通高二摸鱼学生</li>
-                    <li>🥦 是只菜鸟，啥也不会</li>
-                    <li>🖊️ 数理化很差，正在努力挣扎</li>
-                    <li>🕹️ 游戏打得很菜，但又菜又爱玩</li>
-                    <li>🧱 会写经典 Visual Basic，正在学习 Python 和 JavaScript</li>
-                    <li>🫂 爱着身边的每一个人！</li>
+                    <li class="i18n" data-i18n="main.about.l1"></li>
+                    <li class="i18n" data-i18n="main.about.l2"></li>
+                    <li class="i18n" data-i18n="main.about.l3"></li>
+                    <li class="i18n" data-i18n="main.about.l4"></li>
+                    <li class="i18n" data-i18n="main.about.l5"></li>
+                    <li class="i18n" data-i18n="main.about.l6"></li>
                 </ul>
-                <div class="biggerText">🔎 查成分</div>
+                <div class="i18n biggerText" data-i18n="main.about.fields"></div>
                 <ul>
-                    <li>
-                        <img alt="mai" src="https://imgsrc.baidu.com/forum/pic/item/fc1f4134970a304eeba8363e94c8a786c8175c68.jpg" class="smallIcon"/> 引诱人，菜得一匹
+                    <li class="i18n" data-i18n="main.about.f1">
+                        <img alt="mai"
+                             src="https://imgsrc.baidu.com/forum/pic/item/fc1f4134970a304eeba8363e94c8a786c8175c68.jpg"
+                             class="smallIcon"/>
                     </li>
-                    <li>
-                        <img alt="nintendo" src="https://imgsrc.baidu.com/forum/pic/item/562c11dfa9ec8a132195c124b203918fa1ecc063.jpg" class="smallIcon"/> 任天堂粉丝 (但是没有条件入正)
+                    <li class="i18n" data-i18n="main.about.f2">
+                        <img alt="nintendo"
+                             src="https://imgsrc.baidu.com/forum/pic/item/562c11dfa9ec8a132195c124b203918fa1ecc063.jpg"
+                             class="smallIcon"/>
                     </li>
-                    <li>
-                        <img alt="carwan" src="https://imgsrc.baidu.com/forum/pic/item/c75c10385343fbf2c9d130e7f57eca8064388f71.jpg" class="smallIcon"/> 车车人 (ᗜˬᗜ)
+                    <li class="i18n" data-i18n="main.about.f3">
+                        <img alt="carwan"
+                             src="https://imgsrc.baidu.com/forum/pic/item/c75c10385343fbf2c9d130e7f57eca8064388f71.jpg"
+                             class="smallIcon"/>
                     </li>
-                    <li>
-                        <img alt="emulator" src="https://imgsrc.baidu.com/forum/pic/item/42166d224f4a20a414e4aa03d5529822730ed078.jpg" class="smallIcon"/> 折腾各种模拟器
+                    <li class="i18n" data-i18n="main.about.f4">
+                        <img alt="emulator"
+                             src="https://imgsrc.baidu.com/forum/pic/item/42166d224f4a20a414e4aa03d5529822730ed078.jpg"
+                             class="smallIcon"/>
                     </li>
                 </ul>
-                <div class="biggerText">🌊 有趣的事实</div>
+                <div class="i18n biggerText" data-i18n="main.about.facts"></div>
                 <ul>
-                    <li>🕰️ 我比较守旧，很难适应新鲜事物，被称为「赛博原始人」</li>
-                    <li>📠 我不喜欢 Node.js 及其生态</li>
+                    <li class="i18n" data-i18n="main.about.fa1"></li>
+                    <li class="i18n" data-i18n="main.about.fa2"></li>
                 </ul>
                 <div class="gap"></div>
-                <div class="biggerText">🥰 永远爱你们！</div>
-                <div class="gap"></div><div class="gap"></div><div class="gap"></div>
+                <div class="i18n biggerText" data-i18n="main.about.l0v3"></div>
+                <div class="gap"></div>
+                <div class="gap"></div>
+                <div class="gap"></div>
                 <div>
-                    <a href="https://icp.gov.moe/?keyword=20212688">⛩ 萌ICP备20212688号</a>
+                    <a href="https://icp.gov.moe/?keyword=20212688" class="i18n" data-i18n="main.about.moe"></a>
                 </div>
             </div>
             <div class="container" id="containerComments" style="display: none" data-loaded="false">
                 <div id="valine">
-                    <svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg>
+                    <svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden"
+                         viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709">
+                        <path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z"
+                              p-id="2710"></path>
+                    </svg>
                 </div>
             </div>
         </div>

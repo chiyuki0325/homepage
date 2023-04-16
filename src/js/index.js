@@ -11,8 +11,9 @@ const bg = [
     "https://imgsrc.baidu.com/forum/pic/item/9825bc315c6034a8ab70ef428e13495408237667.jpg"
 ]
 
-// fake jq
-const $ = (selector) => document.querySelector(selector)
+if (!window.$) {
+    window.$ = (selector) => document.querySelector(selector)
+}
 
 function showBody() {
     $('#mainOuter').style.opacity = '1'
@@ -204,6 +205,6 @@ function init() {
     initRss()
 }
 
-window.onload = () => {
+window.addEventListener('load', () => {
     init()
-}
+})
