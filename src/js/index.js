@@ -45,22 +45,34 @@ function initHeader() {
 
 function initRss() {
     const RssElement = (title, date, link) => {
-        const cA = (tagName) => document.createElement(tagName)
-        document.createElement('div')
-        const rssElement = cA('div')
-        rssElement.classList.add('rssElement')
-        const rssTitle = cA('div')
-        rssTitle.classList.add('rssTitle')
-        rssTitle.textContent = title
-        rssTitle.addEventListener('click', () => {
-            window.open(link)
-        })
-        const rssDate = cA('div')
-        rssDate.classList.add('rssDate')
-        rssDate.textContent = date.toLocaleDateString()
-        rssElement.appendChild(rssTitle)
-        rssElement.appendChild(rssDate)
-        return rssElement
+        const new_ = (tagName, classNames, props, functions, childs) => {
+            const el = document.createElement(tagName)
+            for (const cls of classNames) {
+                el.classList.add(cls)
+            }
+            for (const child of childs) {
+                el.appendChild(child)
+            }
+            for (const key in props) {
+                el[key] = props[key]
+            }
+            for (const key in functions) {
+                el[key](...functions[key])
+            }
+            return el
+        }
+        return new_('div', ['rssElement'], {}, {}, [
+            new_('div', ['rssTitle'], {
+                textContent: title
+            }, {
+                addEventListener: ['click', () => {
+                    window.open(link)
+                }]
+            }, []),
+            new_('div', ['rssDate'], {
+                textContent: date.toLocaleDateString()
+            }, {}, [])
+        ])
     }
     const xhr = new XMLHttpRequest()
     xhr.open('GET', 'https://blog.yidaozhan.top/atom.xml')
