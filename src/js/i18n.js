@@ -19,7 +19,7 @@ const textI18n = {
                 welcome: '👋 欢迎来到一刀斩的主页！',
                 desc: {
                     l1: '🏫 居住在辽宁，想长大的普通高三学生',
-                    l2: '✏️ 乐于创造、发现和记录',
+                    l2: '🎣 日常摸鱼的蒟蒻',
                     l3: '🐧 使用 Arch Linux 操作系统',
                     l4: '🐍 正在学习 Python 和 JavaScript',
                     l5: '🔄 对未来的方向还很迷茫 … 走一步算一步吧'
@@ -28,21 +28,21 @@ const textI18n = {
                 recent: '📝 最近更新'
             },
             about: {
-                about: '💖 关于我',
+                about: '💖 关于咱',
                 l1: '🤗 想长大的普通高三摸鱼学生',
-                l2: '🥦 是只菜鸟，啥也不会',
+                l2: '🥦 是只蒟蒻，啥也不会',
                 l3: '🖊️ 数理化很差，正在努力挣扎',
                 l4: '🕹️ 游戏打得很菜，但又菜又爱玩',
                 l5: '🧱 会写经典 Visual Basic，正在学习 Python 和 JavaScript',
                 l6: '🫂 爱着身边的每一个人！',
                 fields: '🔎 查成分',
                 f1: ' 引诱人，菜得一匹',
-                f2: ' 任天堂粉丝 (但是没有条件入正)',
+                f2: ' 任天堂粉丝',
                 f3: ' 车车人 (ᗜˬᗜ)',
-                f4: ' 折腾各种模拟器',
                 facts: '🌊 有趣的事实',
-                fa1: '🕰️ 我比较守旧，很难适应新鲜事物，被称为「赛博原始人」',
-                fa2: '📠 我不喜欢 Node.js 及其生态',
+                fa1: '🕰️ 咱比较守旧，很难适应新鲜事物，被称为「赛博原始人」',
+                fa2: '🤔 有强迫症，因此没法接受 Material Design 3 等不整齐的东西',
+                fa3: '🧸 相比起大家还是很不成熟，被当作小孩子 ... 特别想长大！',
                 l0v3: '🥰 永远爱你们！',
                 moe: '⛩ 萌ICP备20212688号'
             }
@@ -61,7 +61,7 @@ const textI18n = {
                 welcome: '👋 歡迎來到一刀斬的主頁！',
                 desc: {
                     l1: '🏫 居住在遼寧，想長大的普通高三學生',
-                    l2: '✏️ 樂於創造、發現和記錄',
+                    l2: '🎣 日常摸魚的蒟蒻',
                     l3: '🐧 使用 Arch Linux 操作系統',
                     l4: '🐍 正在學習 Python 和 JavaScript',
                     l5: '🔄 對未來的方向還很迷茫 … 走一步算一步吧'
@@ -70,21 +70,21 @@ const textI18n = {
                 recent: '📝 最近更新'
             },
             about: {
-                about: '💖 關於我',
+                about: '💖 關於咱',
                 l1: '🤗 想長大的普通高三摸魚學生',
-                l2: '🥦 是只菜鳥，啥也不會',
+                l2: '🥦 是只蒟蒻，啥也不會',
                 l3: '🖊️ 數理化很差，正在努力掙扎',
                 l4: '🕹️ 遊戲打得很菜，但又菜又愛玩',
                 l5: '🧱 會寫經典 Visual Basic，正在學習 Python 和 JavaScript',
                 l6: '🫂 愛著身邊的每一個人！',
                 fields: '🔎 查成分',
                 f1: ' 引誘人，菜得一匹',
-                f2: ' 任天堂粉絲 (但是沒有條件入正)',
+                f2: ' 任天堂粉絲',
                 f3: ' 車車人 (ᗜˬᗜ)',
-                f4: ' 折騰各種模擬器',
                 facts: '🌊 有趣的事實',
-                fa1: '🕰️ 我比較守舊，很難適應新鮮事物，被稱為「賽博原始人」',
-                fa2: '📠 我不喜歡 Node.js 及其生態',
+                fa1: '🕰️ 咱比較守舊，很難適應新鮮事物，被稱為「賽博原始人」',
+                fa2: '🤔 有強迫症，因此沒法接受 Material Design 3 等不整齊的東西',
+                fa3: '🧸 相比起大家還是很不成熟，被當作小孩子 ... 特別想長大！',
                 l0v3: '🥰 永遠愛你們！',
                 moe: '⛩ 萌ICP備20212688號'
             }
@@ -103,7 +103,7 @@ const textI18n = {
                 welcome: '👋 Welcome to Yidaozhan Ya\'s Homepage!',
                 desc: {
                     l1: '🏫 A normal high school student who lives in Liaoning',
-                    l2: '✏️ who likes to create, discover and record',
+                    l2: '🎣 who is a rookie and knows a little about something',
                     l3: '🐧 Using Arch Linux as operating system',
                     l4: '🐍 Learning Python and JavaScript',
                     l5: '🔄 Still confused about the future ... advancing in exploration!'
@@ -114,7 +114,7 @@ const textI18n = {
             about: {
                 about: '💖 About Me',
                 l1: '🤗 A normal high school student who wants to grow up',
-                l2: '🥦 Rookie with no skills',
+                l2: '🥦 Rookie with only a little skills',
                 l3: '🖊️ Math, Physics and Chemistry are very bad, struggling',
                 l4: '🕹️ Unskilled at playing games, but still love to play',
                 l5: '🧱 Write classic Visual Basic, learning Python and JavaScript',
@@ -123,10 +123,10 @@ const textI18n = {
                 f1: ' Rhythm games',
                 f2: ' Nintendo',
                 f3: ' Touhou Project',
-                f4: ' Console emulators',
                 facts: '🌊 Fun Facts',
                 fa1: '🕰️ I\'m more conservative, hard to adapt to new things, called "cyber primitive" by others',
-                fa2: '📠 I don\'t like Node.js and its ecosystem',
+                fa2: '🤔 I can\'t accept things like Material Design 3 that are not neat',
+                fa3: '🧸 Compared to everyone else, I\'m still very immature, being treated as a child ... very want to grow up!',
                 l0v3: '🥰 Love you all!',
                 moe: '⛩ Moe ICP No.20212688'
             }
@@ -145,7 +145,7 @@ const textI18n = {
                 welcome: '👋 ¡Bienvenido a la página de inicio de Yidaozhan Ya!',
                 desc: {
                     l1: '🏫 Un estudiante de secundaria normal que vive en Liaoning',
-                    l2: '✏️ que le gusta crear, descubrir y registrar',
+                    l2: '🎣 que es un novato y sabe un poco sobre algo',
                     l3: '🐧 Usando Arch Linux como sistema operativo',
                     l4: '🐍 Aprendiendo Python y JavaScript',
                     l5: '🔄 Todavía confundido sobre el futuro ... ¡avanzando en la exploración!'
@@ -156,7 +156,7 @@ const textI18n = {
             about: {
                 about: '💖 Acerca de mí',
                 l1: '🤗 Un estudiante de secundaria normal que quiere crecer',
-                l2: '🥦 Novato sin habilidades',
+                l2: '🥦 Novato con solo un poco de habilidades',
                 l3: '🖊️ Matemáticas, física y química son muy malas, luchando',
                 l4: '🕹️ Incompetente para jugar juegos, pero todavía ama jugar',
                 l5: '🧱 Escribe Visual Basic clásico, aprendiendo Python y JavaScript',
@@ -165,10 +165,10 @@ const textI18n = {
                 f1: ' Juegos de ritmo',
                 f2: ' Nintendo',
                 f3: ' Proyecto Touhou',
-                f4: ' Emuladores de consola',
                 facts: '🌊 Datos divertidos',
                 fa1: '🕰️ Soy más conservador, difícil adaptarse a las nuevas cosas, llamado "primitivo cibernético" por otros',
-                fa2: '📠 No me gusta Node.js y su ecosistema',
+                fa2: '🤔 No puedo aceptar cosas como Material Design 3 que no están ordenadas',
+                fa3: '🧸 En comparación con todos los demás, todavía soy muy inmaduro, siendo tratado como un niño ... ¡muy quiero crecer!',
                 l0v3: '🥰 ¡Te amo a todos!',
                 moe: '⛩ Moe ICP No.20212688'
             }
