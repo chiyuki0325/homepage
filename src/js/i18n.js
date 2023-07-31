@@ -18,33 +18,33 @@ const textI18n = {
             home: {
                 welcome: '👋 欢迎来到一刀斩的主页！',
                 desc: {
-                    l1: '🏫 居住在辽宁，想长大的普通高三学生',
-                    l2: '🎣 日常摸鱼的蒟蒻',
-                    l3: '🐧 使用 Arch Linux 操作系统',
-                    l4: '🐍 正在学习 Python 和 JavaScript',
-                    l5: '🔄 对未来的方向还很迷茫 … 走一步算一步吧'
+                    l1: '这里是一刀斩，一个居住在辽宁的，想长大的普通高三学生。',
+                    l2: '我正在尝试着改变自己，为了成为一个更好的人而努力着。',
+                    l3: '我正在尝试着接触新的事物，对未来的方向还很迷茫 ...',
+                    l4: '走一步算一步吧。'
                 },
                 contact: '☎️ 联系我',
                 recent: '📝 最近更新'
             },
             about: {
-                about: '💖 关于咱',
-                l1: '🤗 想长大的普通高三摸鱼学生',
-                l2: '🥦 是只蒟蒻，啥也不会',
-                l3: '🖊️ 数理化很差，正在努力挣扎',
-                l4: '🕹️ 游戏打得很菜，但又菜又爱玩',
-                l5: '🧱 会写经典 Visual Basic，正在学习 Python 和 JavaScript',
-                l6: '🫂 爱着身边的每一个人！',
-                fields: '🔎 查成分',
-                f1: ' 引诱人，菜得一匹',
-                f2: ' 任天堂粉丝',
-                f3: ' 车车人 (ᗜˬᗜ)',
-                facts: '🌊 有趣的事实',
-                fa1: '🕰️ 咱比较守旧，很难适应新鲜事物，被称为「赛博原始人」',
-                fa2: '🤔 有强迫症，因此没法接受 Material Design 3 等不整齐的东西',
-                fa3: '🧸 相比起大家还是很不成熟，被当作小孩子 ... 特别想长大！',
-                l0v3: '🥰 永远爱你们！',
-                moe: '⛩ 萌ICP备20212688号'
+                about: '💖 关于我',
+                l1: '这里是一刀斩，一个居住在辽宁的，想长大的普通高三学生。我正在尝试着改变自己，为了成为一个更好的人而努力着。',
+                l2: '我正在尝试着接触新的事物，对未来的方向还很迷茫 ... 走一步算一步吧。',
+                l3: '我目前使用 <span style="color: #1793d1">Arch Linux</span> 操作系统和 <span style="color: #54a3d8">KDE</span> 桌面。',
+                things_liked: '🔎 喜欢的东西',
+                tl1: '喜欢的颜色是<span style="color: #1793d1">蓝色</span>。',
+                tl2: '目前正在玩的游戏有 <span style="color: #eac92c">m</span><span style="color: #298cc4">a</span><span style="color: #8baf3f">i</span><span style="color: #eac92c">m</span><span style="color: #de5924">a</span><span style="color: #ca3c86">i</span> <span style="color: #03a4e0">DX</span>、《<span style="color: #5eb7ee">崩坏</span> <span style="color: #e0a7e5">星穹铁道</span>》和《<span style="color: #cbb687">塞尔达传说</span> <span style="color: #49d59c">王国之泪</span>》。',
+                tl3: '喜欢听幽闭星光和春卷饭的歌曲，以及 VOCALOID 音乐。',
+                tl4: '最喜欢做的事是摸鱼！',
+                programming: '🖥️ 编程',
+                p1: '我学会的第一门编程语言是 <span style="color: #652d92">Visual Basic (经典)</span>，并且至今还在使用。',
+                p2: '目前还掌握了 <span style="color: #336fa1">Pyt</span><span style="color: #f9c83d">hon</span> 和一点点 <span style="color: #efaa0f">Java</span>Script。',
+                p3: '正在学习 <span style="color: #42b883">Vue</span><span style="color: #35495e">.js</span> 和 <span style="color: #007d9c">Golang</span>。',
+                things_hated: '💢 讨厌的东西',
+                th1: '最讨厌的东西是 <span style="color: #f45326">Wi</span><span style="color: #82bc06">nd</span><span style="color: #05a6f1">ow</span><span style="color: #ffbb08">s</span>，最讨厌的人是牛头人。',
+                dream: '🌈 理想',
+                d1: '我 2024 年高考，目标是考上合肥工业大学，经过未来的学习，成为一名优秀的全栈开发者。',
+                moe: '⛩ 萌 ICP 备 20212688'
             }
         }
     },
@@ -60,33 +60,31 @@ const textI18n = {
             home: {
                 welcome: '👋 歡迎來到一刀斬的主頁！',
                 desc: {
-                    l1: '🏫 居住在遼寧，想長大的普通高三學生',
-                    l2: '🎣 日常摸魚的蒟蒻',
-                    l3: '🐧 使用 Arch Linux 操作系統',
-                    l4: '🐍 正在學習 Python 和 JavaScript',
-                    l5: '🔄 對未來的方向還很迷茫 … 走一步算一步吧'
+                    l1: '這裡是一刀斬，一個居住在遼寧的，想長大的普通高三學生。我正在嘗試著改變自己，為了成為一個更好的人而努力著。',
+                    l2: '我正在嘗試著接觸新的事物，對未來的方向還很迷茫 ... 走一步算一步吧。',
                 },
                 contact: '☎️ 聯繫我',
                 recent: '📝 最近更新'
             },
             about: {
-                about: '💖 關於咱',
-                l1: '🤗 想長大的普通高三摸魚學生',
-                l2: '🥦 是只蒟蒻，啥也不會',
-                l3: '🖊️ 數理化很差，正在努力掙扎',
-                l4: '🕹️ 遊戲打得很菜，但又菜又愛玩',
-                l5: '🧱 會寫經典 Visual Basic，正在學習 Python 和 JavaScript',
-                l6: '🫂 愛著身邊的每一個人！',
-                fields: '🔎 查成分',
-                f1: ' 引誘人，菜得一匹',
-                f2: ' 任天堂粉絲',
-                f3: ' 車車人 (ᗜˬᗜ)',
-                facts: '🌊 有趣的事實',
-                fa1: '🕰️ 咱比較守舊，很難適應新鮮事物，被稱為「賽博原始人」',
-                fa2: '🤔 有強迫症，因此沒法接受 Material Design 3 等不整齊的東西',
-                fa3: '🧸 相比起大家還是很不成熟，被當作小孩子 ... 特別想長大！',
-                l0v3: '🥰 永遠愛你們！',
-                moe: '⛩ 萌ICP備20212688號'
+                about: '💖 關於我',
+                l1: '這裡是一刀斬，一個居住在遼寧的，想長大的普通高三學生。我正在嘗試著改變自己，為了成為一個更好的人而努力著。',
+                l2: '我正在嘗試著接觸新的事物，對未來的方向還很迷茫 ... 走一步算一步吧。',
+                l3: '我目前使用 <span style="color: #1793d1">Arch Linux</span> 操作系統和 <span style="color: #54a3d8">KDE</span> 桌面。',
+                things_liked: '🔎 喜歡的東西',
+                tl1: '喜歡的顏色是<span style="color: #1793d1">藍色</span>。',
+                tl2: '目前正在玩的遊戲有 <span style="color: #eac92c">m</span><span style="color: #298cc4">a</span><span style="color: #8baf3f">i</span><span style="color: #eac92c">m</span><span style="color: #de5924">a</span><span style="color: #ca3c86">i</span> <span style="color: #03a4e0">DX</span>、《<span style="color: #5eb7ee">崩壞</span> <span style="color: #e0a7e5">星穹鐵道</span>》和《<span style="color: #cbb687">塞爾達傳說</span> <span style="color: #49d59c">王國之淚</span>》。',
+                tl3: '喜歡聽幽閉星光和春捲飯的歌曲，以及 VOCALOID 音樂。',
+                tl4: '最喜歡做的事是摸魚！',
+                programming: '🖥️ 編程',
+                p1: '我學會的第一門編程語言是 <span style="color: #652d92">Visual Basic (經典)</span>，並且至今還在使用。',
+                p2: '目前還掌握了 <span style="color: #336fa1">Pyt</span><span style="color: #f9c83d">hon</span> 和一點點 <span style="color: #efaa0f">Java</span>Script。',
+                p3: '正在學習 <span style="color: #42b883">Vue</span><span style="color: #35495e">.js</span> 和 <span style="color: #007d9c">Golang</span>。',
+                things_hated: '💢 討厭的東西',
+                th1: '最討厭的東西是 <span style="color: #f45326">Wi</span><span style="color: #82bc06">nd</span><span style="color: #05a6f1">ow</span><span style="color: #ffbb08">s</span>，最討厭的人是牛頭人。',
+                dream: '🌈 理想',
+                d1: '我 2024 年高考，目標是考上合肥工業大學，經過未來的學習，成為一名優秀的全棧開發者。',
+                moe: '⛩ 萌 ICP 備 20212688'
             }
         }
     },
@@ -102,33 +100,31 @@ const textI18n = {
             home: {
                 welcome: '👋 Welcome to Yidaozhan Ya\'s Homepage!',
                 desc: {
-                    l1: '🏫 A normal high school student who lives in Liaoning',
-                    l2: '🎣 who is a rookie and knows a little about something',
-                    l3: '🐧 Using Arch Linux as operating system',
-                    l4: '🐍 Learning Python and JavaScript',
-                    l5: '🔄 Still confused about the future ... advancing in exploration!'
+                    l1: 'I\'m Yidaozhan Ya, a normal high school student living in Liaoning who wants to grow up. I\'m trying to change myself and work hard to become a better person.',
+                    l2: 'I\'m trying to get in touch with new things, and I\'m still very confused about the direction of the future ... Step by step towards the future.',
                 },
                 contact: '☎️ Contact Me',
                 recent: '📝 Recent Updates'
             },
             about: {
                 about: '💖 About Me',
-                l1: '🤗 A normal high school student who wants to grow up',
-                l2: '🥦 Rookie with only a little skills',
-                l3: '🖊️ Math, Physics and Chemistry are very bad, struggling',
-                l4: '🕹️ Unskilled at playing games, but still love to play',
-                l5: '🧱 Write classic Visual Basic, learning Python and JavaScript',
-                l6: '🫂 Loving everyone around me!',
-                fields: '🔎 Games played',
-                f1: ' Rhythm games',
-                f2: ' Nintendo',
-                f3: ' Touhou Project',
-                facts: '🌊 Fun Facts',
-                fa1: '🕰️ I\'m more conservative, hard to adapt to new things, called "cyber primitive" by others',
-                fa2: '🤔 I can\'t accept things like Material Design 3 that are not neat',
-                fa3: '🧸 Compared to everyone else, I\'m still very immature, being treated as a child ... very want to grow up!',
-                l0v3: '🥰 Love you all!',
-                moe: '⛩ Moe ICP No.20212688'
+                l1: 'I\'m Yidaozhan Ya, a normal high school student living in Liaoning who wants to grow up. I\'m trying to change myself and work hard to become a better person.',
+                l2: 'I\'m trying to get in touch with new things, and I\'m still very confused about the direction of the future ... Step by step towards the future.',
+                l3: 'I\'m currently using <span style="color: #1793d1">Arch Linux</span> operating system and <span style="color: #54a3d8">KDE</span> desktop.',
+                things_liked: '🔎 Things I Liked',
+                tl1: 'My favorite color is <span style="color: #1793d1">blue</span>.',
+                tl2: 'The games I\'m currently playing are <span style="color: #eac92c">m</span><span style="color: #298cc4">a</span><span style="color: #8baf3f">i</span><span style="color: #eac92c">m</span><span style="color: #de5924">a</span><span style="color: #ca3c86">i</span> <span style="color: #03a4e0">DX</span>, <span style="color: #5eb7ee">Honkai Impact 3rd</span> and <span style="color: #cbb687">The Legend of Zelda: Breath of the Wild</span>.',
+                tl3: 'I like to listen to the songs of <span style="color: #b6d3f8">Yuu Hikachi</span> and <span style="color: #f6f5b4">Harumaki Gohan</span>, and VOCALOID music.',
+                tl4: 'The favorite thing I like to do is to touch fish!',
+                programming: '🖥️ Programming',
+                p1: 'The first programming language I learned is <span style="color: #652d92">Visual Basic (Classic)</span>, and I\'m still using it today.',
+                p2: 'I have also mastered <span style="color: #336fa1">Pyt</span><span style="color: #f9c83d">hon</span> and a little <span style="color: #efaa0f">Java</span>Script.',
+                p3: 'I\'m currently learning <span style="color: #42b883">Vue</span><span style="color: #35495e">.js</span> and <span style="color: #007d9c">Golang</span>.',
+                things_hated: '💢 Things I Hated',
+                th1: 'The most hated thing is <span style="color: #f45326">Wi</span><span style="color: #82bc06">nd</span><span style="color: #05a6f1">ow</span><span style="color: #ffbb08">s</span>, and the most hated person is Tauren.',
+                dream: '🌈 Dream',
+                d1: 'I\'m taking the college entrance examination in 2024. My goal is to get into Hefei University of Technology. After future learning, I want to become an excellent full-stack developer.',
+                moe: '⛩ Moe ICP No. 20212688'
             }
         }
     },
@@ -144,33 +140,32 @@ const textI18n = {
             home: {
                 welcome: '👋 ¡Bienvenido a la página de inicio de Yidaozhan Ya!',
                 desc: {
-                    l1: '🏫 Un estudiante de secundaria normal que vive en Liaoning',
-                    l2: '🎣 que es un novato y sabe un poco sobre algo',
-                    l3: '🐧 Usando Arch Linux como sistema operativo',
-                    l4: '🐍 Aprendiendo Python y JavaScript',
-                    l5: '🔄 Todavía confundido sobre el futuro ... ¡avanzando en la exploración!'
+                    l1: 'Soy Yidaozhan Ya, un estudiante de secundaria normal que vive en Liaoning que quiere crecer. Estoy tratando de cambiarme a mí mismo y trabajar duro para convertirme en una mejor persona.',
+                    l2: 'Estoy tratando de ponerme en contacto con cosas nuevas, y todavía estoy muy confundido acerca de la dirección del futuro ... Paso a paso hacia el futuro.',
                 },
                 contact: '☎️ Contacto',
                 recent: '📝 Actualizaciones recientes'
             },
             about: {
                 about: '💖 Acerca de mí',
-                l1: '🤗 Un estudiante de secundaria normal que quiere crecer',
-                l2: '🥦 Novato con solo un poco de habilidades',
-                l3: '🖊️ Matemáticas, física y química son muy malas, luchando',
-                l4: '🕹️ Incompetente para jugar juegos, pero todavía ama jugar',
-                l5: '🧱 Escribe Visual Basic clásico, aprendiendo Python y JavaScript',
-                l6: '🫂 ¡Amando a todos los que me rodean!',
-                fields: '🔎 Juegos jugados',
-                f1: ' Juegos de ritmo',
-                f2: ' Nintendo',
-                f3: ' Proyecto Touhou',
-                facts: '🌊 Datos divertidos',
-                fa1: '🕰️ Soy más conservador, difícil adaptarse a las nuevas cosas, llamado "primitivo cibernético" por otros',
-                fa2: '🤔 No puedo aceptar cosas como Material Design 3 que no están ordenadas',
-                fa3: '🧸 En comparación con todos los demás, todavía soy muy inmaduro, siendo tratado como un niño ... ¡muy quiero crecer!',
-                l0v3: '🥰 ¡Te amo a todos!',
-                moe: '⛩ Moe ICP No.20212688'
+
+                l1: 'Soy Yidaozhan Ya, un estudiante de secundaria normal que vive en Liaoning que quiere crecer. Estoy tratando de cambiarme a mí mismo y trabajar duro para convertirme en una mejor persona.',
+                l2: 'Estoy tratando de ponerme en contacto con cosas nuevas, y todavía estoy muy confundido acerca de la dirección del futuro ... Paso a paso hacia el futuro.',
+                l3: 'Actualmente estoy usando el sistema operativo <span style="color: #1793d1">Arch Linux</span> y el escritorio <span style="color: #54a3d8">KDE</span>.',
+                things_liked: '🔎 Cosas que me gustan',
+                tl1: 'Mi color favorito es <span style="color: #1793d1">azul</span>.',
+                tl2: 'Los juegos que estoy jugando actualmente son <span style="color: #eac92c">m</span><span style="color: #298cc4">a</span><span style="color: #8baf3f">i</span><span style="color: #eac92c">m</span><span style="color: #de5924">a</span><span style="color: #ca3c86">i</span> <span style="color: #03a4e0">DX</span>, <span style="color: #5eb7ee">Honkai Impact 3rd</span> y <span style="color: #cbb687">The Legend of Zelda: Breath of the Wild</span>.',
+                tl3: 'Me gusta escuchar las canciones de <span style="color: #b6d3f8">Yuu Hikachi</span> y <span style="color: #f6f5b4">Harumaki Gohan</span>, y la música de VOCALOID.',
+                tl4: '¡Lo que más me gusta hacer es tocar peces!',
+                programming: '🖥️ Programación',
+                p1: 'El primer lenguaje de programación que aprendí es <span style="color: #652d92">Visual Basic (Classic)</span>, y todavía lo estoy usando hoy.',
+                p2: 'También he dominado <span style="color: #336fa1">Pyt</span><span style="color: #f9c83d">hon</span> y un poco de <span style="color: #efaa0f">Java</span>Script.',
+                p3: 'Actualmente estoy aprendiendo <span style="color: #42b883">Vue</span><span style="color: #35495e">.js</span> y <span style="color: #007d9c">Golang</span>.',
+                things_hated: '💢 Cosas que odio',
+                th1: 'Lo que más odio es <span style="color: #f45326">Wi</span><span style="color: #82bc06">nd</span><span style="color: #05a6f1">ow</span><span style="color: #ffbb08">s</span>, y la persona que más odio es Tauren.',
+                dream: '🌈 Sueño',
+                d1: 'Estoy tomando el examen de ingreso a la universidad en 2024. Mi objetivo es ingresar a la Universidad de Tecnología de Hefei. Después del aprendizaje futuro, quiero convertirme en un excelente desarrollador de pila completa.',
+                moe: '⛩ Moe ICP No. 20212688'
             }
         }
     }
@@ -242,10 +237,13 @@ function i18nTitle() {
 function i18nText() {
     for (const el of document.getElementsByClassName('i18n')) {
         const i18nId = el.getAttribute('data-i18n')
+        const str = getI18nString(i18nId) || 'N/A'
         if (el.innerHTML !== '') {
-            el.innerHTML += getI18nString(i18nId)
+            el.innerHTML += str
+        } else if (str.includes('<')) {
+            el.innerHTML = str
         } else {
-            el.innerText = getI18nString(i18nId)
+            el.innerText = str
         }
     }
 }
