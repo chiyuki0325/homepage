@@ -60,8 +60,10 @@ const textI18n = {
             home: {
                 welcome: '👋 歡迎來到一刀斬的主頁！',
                 desc: {
-                    l1: '這裡是一刀斬，一個居住在遼寧的，想長大的普通高三學生。我正在嘗試著改變自己，為了成為一個更好的人而努力著。',
-                    l2: '我正在嘗試著接觸新的事物，對未來的方向還很迷茫 ... 走一步算一步吧。',
+                    l1: '這裡是一刀斬，一個居住在遼寧的，想長大的普通高三學生。',
+                    l2: '我正在嘗試著改變自己，為了成為一個更好的人而努力著。',
+                    l3: '我正在嘗試著接觸新的事物，對未來的方向還很迷茫 ...',
+                    l4: '走一步算一步吧。',
                 },
                 contact: '☎️ 聯繫我',
                 recent: '📝 最近更新'
@@ -100,8 +102,10 @@ const textI18n = {
             home: {
                 welcome: '👋 Welcome to Yidaozhan Ya\'s Homepage!',
                 desc: {
-                    l1: 'I\'m Yidaozhan Ya, a normal high school student living in Liaoning who wants to grow up. I\'m trying to change myself and work hard to become a better person.',
-                    l2: 'I\'m trying to get in touch with new things, and I\'m still very confused about the direction of the future ... Step by step towards the future.',
+                    l1: 'I\'m Yidaozhan Ya, a normal high school student living in Liaoning who wants to grow up.',
+                    l2: 'I\'m trying to change myself and work hard to become a better person.',
+                    l3: 'I\'m trying to get in touch with new things, and I\'m still very confused about the direction of the future ...',
+                    l4: 'Step by step towards the future.',
                 },
                 contact: '☎️ Contact Me',
                 recent: '📝 Recent Updates'
@@ -140,8 +144,10 @@ const textI18n = {
             home: {
                 welcome: '👋 ¡Bienvenido a la página de inicio de Yidaozhan Ya!',
                 desc: {
-                    l1: 'Soy Yidaozhan Ya, un estudiante de secundaria normal que vive en Liaoning que quiere crecer. Estoy tratando de cambiarme a mí mismo y trabajar duro para convertirme en una mejor persona.',
-                    l2: 'Estoy tratando de ponerme en contacto con cosas nuevas, y todavía estoy muy confundido acerca de la dirección del futuro ... Paso a paso hacia el futuro.',
+                    l1: 'Soy Yidaozhan Ya, un estudiante de secundaria normal que vive en Liaoning que quiere crecer.',
+                    l2: 'Estoy tratando de cambiarme a mí mismo y trabajar duro para convertirme en una mejor persona.',
+                    l3: 'Estoy tratando de ponerme en contacto con cosas nuevas, y todavía estoy muy confundido acerca de la dirección del futuro ...',
+                    l4: 'Paso a paso hacia el futuro.',
                 },
                 contact: '☎️ Contacto',
                 recent: '📝 Actualizaciones recientes'
