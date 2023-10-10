@@ -243,7 +243,7 @@ const imgI18n = {
 }
 
 function getLocaleId() {
-    const locale = new URLSearchParams(window.location.search).get('locale').toLowerCase() || navigator.language.toLowerCase()
+    const locale = ((new URLSearchParams(window.location.search).get('locale')) || navigator.language).toLowerCase()
     switch (locale) {
         case 'zh-cn':
             return 'zh-cn'

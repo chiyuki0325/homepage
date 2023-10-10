@@ -13,7 +13,7 @@ const config = {
         'css/index.css',
         'css/fonts.css',
         'css/colors.css',
-        'css/valine.css'
+        'css/waline.css'
     ]
 }
 

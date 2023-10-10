@@ -111,73 +111,40 @@ function initRss() {
 
 function initComment() {
     if ($('#containerComments').getAttribute('data-loaded') === 'true') return
-    const scriptLeanCloud = document.createElement('script')
-    scriptLeanCloud.src = 'https://blog.yidaozhan.top/cdn/js/av-min.js'
-    const scriptValine = document.createElement('script')
-    scriptValine.src = 'https://blog.yidaozhan.top/cdn/js/Valine.mod.js'
-    const styleValine = document.createElement('link')
-    styleValine.rel = 'stylesheet'
-    styleValine.href = '/css/valine.css'
-    document.body.appendChild(scriptLeanCloud)
-    scriptLeanCloud.onload = () => {
-        document.head.appendChild(styleValine)
-        styleValine.onload = () => {
-            document.body.appendChild(scriptValine)
-            scriptValine.onload = () => {
-                const getEmojiMaps = () => {
-                    let i;
 
-                    function emoji(path, idx, ext) {
-                        return path + "/" + path + "-" + idx + "." + ext;
-                    }
+    const scriptWaline = document.createElement('script')
+    scriptWaline.src = 'https://ydz-cos.zyglq.cn/blog-static/js/waline.js'
 
-                    const emojiMaps = {};
-                    for (i = 1; i <= 54; i++) {
-                        emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
-                    }
-                    for (i = 1; i <= 101; i++) {
-                        emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
-                    }
-                    for (i = 1; i <= 4; i++) {
-                        emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
-                    }
-                    return emojiMaps;
-                }
-                (() => {
-                    (new Valine).init(Object.assign({
-                        js: "https://blog.yidaozhan.top/cdn/js/Valine.mod.js",
-                        appId: "zoX8kazyGBliRB8slCeYbOMI-MdYXbMMI",
-                        appKey: "ayoqJFfEYQj3teSHqfK03JJo",
-                        placeholder: "📨 快发条评论吧 (`･ω･´)ฅ",
-                        requiredFields: ["nick", "mail"],
-                        enableQQ: !0,
-                        recordIP: !1,
-                        avatar: "robohash",
-                        pageSize: 10,
-                        lang: "zh-cn",
-                        highlight: !0,
-                        mathJax: !1,
-                        tagMeta: ["博主", "小伙伴", "访客"],
-                        metaPlaceholder: {
-                            nick: "📋️ 昵称/QQ",
-                            mail: "📪 邮箱",
-                            link: "🔗 网址(https://)"
-                        },
-                        master: ["6783037F2DF30EAB99F9FC256157D875"],
-                        friends: ["6783037F2DF30EAB99F9FC256157D875"],
-                        meta: ["nick", "mail"],
-                        serverURLs: "https://valine-api.yidaozhan.top"
-                    }, {
-                        el: "#valine",
-                        path: "homepage",
-                        placeholder: "📨 快发条评论吧 (`･ω･´)ฅ",
-                        emojiCDN: "https://blog.yidaozhan.top/cdn/emoji/",
-                        emojiMaps: getEmojiMaps()
-                    }))
-                })()
-                $('#containerComments').setAttribute('data-loaded', 'true')
-            }
-        }
+    const styleWaline = document.createElement('link')
+    styleWaline.rel = 'stylesheet'
+    styleWaline.href = 'https://ydz-cos.zyglq.cn/blog-static/css/waline.css'
+
+    document.head.appendChild(styleWaline)
+    document.body.appendChild(scriptWaline)
+
+    scriptWaline.onload = () => {
+        Waline.init({
+            serverURL: 'https://comments.yidaozhan.top',
+            placeholder: "📨 快发条评论吧 (`･ω･´)ฅ",
+            requiredFields: ["nick", "mail"],
+            enableQQ: false,
+            recordIP: true,
+            avatar: "robohash",
+            pageSize: 10,
+            lang: "zh-cn",
+            highlight: true,
+            mathJax: false,
+            tagMeta: ["博主", "小伙伴", "访客"],
+            metaPlaceholder: {
+                nick: "📋️ 昵称/QQ",
+                mail: "📪 邮箱",
+                link: "🔗 网址(https://)"
+            },
+            meta: ["nick", "mail"],
+            el: "#waline",
+            path: "homepage"
+        })
+        $('#containerComments').setAttribute('data-loaded', 'true')
     }
 }
 
