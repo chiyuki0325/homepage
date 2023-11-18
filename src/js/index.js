@@ -75,7 +75,7 @@ function initRss() {
         ])
     }
     const xhr = new XMLHttpRequest()
-    xhr.open('GET', 'https://blog.yidaozhan.top/atom.xml')
+    xhr.open('GET', 'https://blog.chyk.ink/atom.xml')
     xhr.send()
     xhr.onload = () => {
         const rssRoot = $('#rss')
@@ -124,7 +124,7 @@ function initComment() {
 
     scriptWaline.onload = () => {
         Waline.init({
-            serverURL: 'https://comments.yidaozhan.top',
+            serverURL: 'https://comments.chyk.ink',
             placeholder: "📨 快发条评论吧 (`･ω･´)ฅ",
             requiredFields: ["nick", "mail"],
             enableQQ: false,
@@ -171,11 +171,11 @@ function tabClick(tabId) {
 }
 
 function jumpToBlog() {
-    window.open('https://blog.yidaozhan.top')
+    window.open('https://blog.chyk.ink')
 }
 
 function jumpToFiles() {
-    window.open('https://file.yidaozhan.top')
+    window.open('https://file.chyk.ink')
 }
 
 function init() {
