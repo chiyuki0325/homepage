@@ -1,8 +1,8 @@
 const titleI18n = {
-    'zh-cn': '一刀斩の小窝 ~',
-    'zh-tw': '一刀斬の小窩 ~',
-    'en-us': "Yidaozhan's Homepage ~",
-    'es-es': "Yidaozhan's Hogar ~"
+    'zh-cn': '千雪的咖啡厅 ~',
+    'zh-tw': '千雪的咖啡廳 ~',
+    'en-us': "Chiyuki's Homepage ~",
+    'es-es': 'Hogar de Chiyuki ~'
 }
 
 const textI18n = {
@@ -16,9 +16,9 @@ const textI18n = {
         },
         main: {
             home: {
-                welcome: '👋 欢迎来到一刀斩的主页！',
+                welcome: '👋 欢迎来到斬風·千雪的主页！',
                 desc: {
-                    l1: '这里是一刀斩，一个居住在辽宁的，想长大的普通高三学生。',
+                    l1: '这里是斬風千雪 (Kirukaze Chiyuki)，一个居住在辽宁的，想长大的普通高三学生。',
                     l2: '我正在尝试着改变自己，为了成为一个更好的人而努力着。',
                     l3: '我正在尝试着接触新的事物，对未来的方向还很迷茫 ...',
                     l4: '走一步算一步吧。'
@@ -28,7 +28,7 @@ const textI18n = {
             },
             about: {
                 about: '💖 关于我',
-                l1: '这里是一刀斩，一个居住在辽宁的，想长大的普通高三学生。我正在尝试着改变自己，为了成为一个更好的人而努力着。',
+                l1: '这里是斬風千雪，一个居住在辽宁的，想长大的普通高三学生。我正在尝试着改变自己，为了成为一个更好的人而努力着。',
                 l2: '我正在尝试着接触新的事物，对未来的方向还很迷茫 ... 走一步算一步吧。',
                 l3: '我目前使用 <span style="color: #1793d1">Arch Linux</span> 操作系统和 <span style="color: #54a3d8">KDE</span> 桌面。',
                 things_liked: '🔎 喜欢的东西',
@@ -42,8 +42,9 @@ const textI18n = {
                 p3: '正在学习 <span style="color: #42b883">Vue</span><span style="color: #35495e">.js</span>、<span style="color: #007d9c">Golang</span> 和 <span style="color: #f74b00">Rust</span>。',
                 things_hated: '💢 讨厌的东西',
                 th1: '最讨厌的东西是 <span style="color: #f45326">Wi</span><span style="color: #82bc06">nd</span><span style="color: #05a6f1">ow</span><span style="color: #ffbb08">s</span>，最讨厌的人是牛头人。',
-                dream: '🌈 理想',
-                d1: '我 2024 年高考，目标是考上合肥工业大学，经过未来的学习，成为一名优秀的全栈开发者。',
+                talk: '🌈 想说的话 ...',
+                t1: '「我会等候至轮回之时，对这颗因怜悯而萌生爱意的心起誓」',
+                t2: '摘自幽闭星光的《月に叢雲華に風》',
                 moe: '⛩ 萌 ICP 备 20212688'
             }
         }
@@ -58,9 +59,9 @@ const textI18n = {
         },
         main: {
             home: {
-                welcome: '👋 歡迎來到一刀斬的主頁！',
+                welcome: '👋 歡迎來到斬風·千雪的主頁！',
                 desc: {
-                    l1: '這裡是一刀斬，一個居住在遼寧的，想長大的普通高三學生。',
+                    l1: '這裡是斬風千雪 (Kirukaze Chiyuki)，一個居住在遼寧的，想長大的普通高三學生。',
                     l2: '我正在嘗試著改變自己，為了成為一個更好的人而努力著。',
                     l3: '我正在嘗試著接觸新的事物，對未來的方向還很迷茫 ...',
                     l4: '走一步算一步吧。',
@@ -70,7 +71,7 @@ const textI18n = {
             },
             about: {
                 about: '💖 關於我',
-                l1: '這裡是一刀斬，一個居住在遼寧的，想長大的普通高三學生。我正在嘗試著改變自己，為了成為一個更好的人而努力著。',
+                l1: '這裡是斬風千雪，一個居住在遼寧的，想長大的普通高三學生。我正在嘗試著改變自己，為了成為一個更好的人而努力著。',
                 l2: '我正在嘗試著接觸新的事物，對未來的方向還很迷茫 ... 走一步算一步吧。',
                 l3: '我目前使用 <span style="color: #1793d1">Arch Linux</span> 操作系統和 <span style="color: #54a3d8">KDE</span> 桌面。',
                 things_liked: '🔎 喜歡的東西',
@@ -84,8 +85,9 @@ const textI18n = {
                 p3: '正在學習 <span style="color: #42b883">Vue</span><span style="color: #35495e">.js</span>、<span style="color: #007d9c">Golang</span> 和 <span style="color: #f74b00">Rust</span>。',
                 things_hated: '💢 討厭的東西',
                 th1: '最討厭的東西是 <span style="color: #f45326">Wi</span><span style="color: #82bc06">nd</span><span style="color: #05a6f1">ow</span><span style="color: #ffbb08">s</span>，最討厭的人是牛頭人。',
-                dream: '🌈 理想',
-                d1: '我 2024 年高考，目標是考上合肥工業大學，經過未來的學習，成為一名優秀的全棧開發者。',
+                talk: '🌈 想說的話 ...',
+                t1: '「我會等候至輪迴之時，對這顆因憐憫而萌生愛意的心起誓」',
+                t2: '摘自幽閉星光的《月に叢雲華に風》',
                 moe: '⛩ 萌 ICP 備 20212688'
             }
         }
@@ -100,9 +102,9 @@ const textI18n = {
         },
         "main": {
             "home": {
-                "welcome": "👋 一刀斬のホームページへようこそ！",
+                "welcome": "👋 斬風 千雪のホームページへようこそ！",
                 "desc": {
-                    "l1": "私は「一刀斬」 (Yidaozhan Ya)、遼寧に住んでいる、成長したい普通の高校生です。",
+                    "l1": "私は 斬風 千雪、遼寧に住んでいる、成長したい普通の高校生です。",
                     "l2": "私は自分を変えようとしています、そして、より良い人になるために努力しています。",
                     "l3": "私は新しいことに触れようとしていますが、未来の方向についてはまだ非常に混乱しています...",
                     "l4": "未来に向けて一歩ずつ。",
@@ -112,7 +114,7 @@ const textI18n = {
             },
             "about": {
                 "about": "💖 私について",
-                "l1": "私は「一刀斬」 (Yidaozhan Ya)、遼寧に住んでいる、成長したい普通の高校生です。私は自分を変えようとしています、そして、より良い人になるために努力しています。",
+                "l1": "私は 斬風 千雪、遼寧に住んでいる、成長したい普通の高校生です。私は自分を変えようとしています、そして、より良い人になるために努力しています。",
                 "l2": "私は新しいことに触れようとしていますが、未来の方向についてはまだ非常に混乱しています...未来に向けて一歩ずつ。",
                 "l3": "現在、私は <span style=\"color: #1793d1\">Arch Linux</span> オペレーティングシステムと <span style=\"color: #54a3d8\">KDE</span> デスクトップを使用しています。",
                 "things_liked": "🔎 好きなもの",
@@ -126,8 +128,9 @@ const textI18n = {
                 "p3": "現在、私は <span style=\"color: #42b883\">Vue</span><span style=\"color: #35495e\">.js</span>、<span style=\"color: #007d9c\">Golang</span> 、<span style=\"color: #f74b00\">Rust</span> を学んでいます。",
                 "things_hated": "💢 嫌いなもの",
                 "th1": "一番嫌いなのは <span style=\"color: #f45326\">Wi</span><span style=\"color: #82bc06\">nd</span><span style=\"color: #05a6f1\">ow</span><span style=\"color: #ffbb08\">s</span> です、一番嫌いなのは「寝取られ」の人たちです。",
-                "dream": "🌈 夢",
-                "d1": "私は 2024 年に大学入試を受けます、目標は合肥工業大学に入学することです、将来の学習を経て、優秀なフルスタック開発者になりたいです。",
+                "talk": "🌈 言いたいこと ...",
+                "t1": "「待ち続けよう輪廻の時を、慈しむ心に誓って」",
+                "t2": "幽閉サテライトの「月に叢雲華に風」から",
                 "moe": "⛩ 萌 ICP No. 20212688"
             }
         }
@@ -142,9 +145,9 @@ const textI18n = {
         },
         main: {
             home: {
-                welcome: '👋 Welcome to Yidaozhan Ya\'s Homepage!',
+                welcome: '👋 Welcome to Kirukaze Chiyuki\'s Homepage!',
                 desc: {
-                    l1: 'I\'m Yidaozhan Ya, a normal high school student living in Liaoning who wants to grow up.',
+                    l1: 'I\'m Kirukaze Chiyuki, a normal high school student living in Liaoning who wants to grow up.',
                     l2: 'I\'m trying to change myself and work hard to become a better person.',
                     l3: 'I\'m trying to get in touch with new things, and I\'m still very confused about the direction of the future ...',
                     l4: 'Step by step towards the future.',
@@ -154,7 +157,7 @@ const textI18n = {
             },
             about: {
                 about: '💖 About Me',
-                l1: 'I\'m Yidaozhan Ya, a normal high school student living in Liaoning who wants to grow up. I\'m trying to change myself and work hard to become a better person.',
+                l1: 'I\'m Kirukaze Chiyuki, a normal high school student living in Liaoning who wants to grow up. I\'m trying to change myself and work hard to become a better person.',
                 l2: 'I\'m trying to get in touch with new things, and I\'m still very confused about the direction of the future ... Step by step towards the future.',
                 l3: 'I\'m currently using <span style="color: #1793d1">Arch Linux</span> operating system and <span style="color: #54a3d8">KDE Plasma</span> desktop environment.',
                 things_liked: '🔎 Things I Liked',
@@ -168,8 +171,9 @@ const textI18n = {
                 p3: 'I\'m currently learning <span style="color: #42b883">Vue</span><span style="color: #35495e">.js</span>, <span style="color: #007d9c">Golang</span> and <span style="color: #f74b00">Rust</span>.',
                 things_hated: '💢 Things I Hated',
                 th1: 'What I hate most are <span style="color: #f45326">Wi</span><span style="color: #82bc06">nd</span><span style="color: #05a6f1">ow</span><span style="color: #ffbb08">s</span> and people who have an affair.',
-                dream: '🌈 Dream',
-                d1: 'I\'m taking the college entrance examination in 2024. My goal is to get into Hefei University of Technology. After future learning, I want to become an excellent full-stack developer.',
+                talk: '🌈 What I want to say ...',
+                t1: '"I will wait until the time of reincarnation, and swear to the heart that has love because of compassion"',
+                t2: 'From Yuuhei Satellite\'s "Tsuki ni Murakumo Hana ni Kaze"',
                 moe: '⛩ Moe ICP No. 20212688'
             }
         }
@@ -184,9 +188,9 @@ const textI18n = {
         },
         main: {
             home: {
-                welcome: '👋 ¡Bienvenido a la página de inicio de Yidaozhan Ya!',
+                welcome: '👋 ¡Bienvenido a la página de hogar de Kirukaze Chiyuki!',
                 desc: {
-                    l1: 'Soy Yidaozhan Ya, un estudiante de secundaria normal que vive en Liaoning que quiere crecer.',
+                    l1: 'Soy Kirukaze Chiyuki, un estudiante de secundaria normal que vive en Liaoning que quiere crecer.',
                     l2: 'Estoy tratando de cambiarme a mí mismo y trabajar duro para convertirme en una mejor persona.',
                     l3: 'Estoy tratando de ponerme en contacto con cosas nuevas, y todavía estoy muy confundido acerca de la dirección del futuro ...',
                     l4: 'Paso a paso hacia el futuro.',
@@ -197,7 +201,7 @@ const textI18n = {
             about: {
                 about: '💖 Acerca de mí',
 
-                l1: 'Soy Yidaozhan Ya, un estudiante de secundaria normal que vive en Liaoning que quiere crecer. Estoy tratando de cambiarme a mí mismo y trabajar duro para convertirme en una mejor persona.',
+                l1: 'Soy Kirukaze Chiyuki, un estudiante de secundaria normal que vive en Liaoning que quiere crecer. Estoy tratando de cambiarme a mí mismo y trabajar duro para convertirme en una mejor persona.',
                 l2: 'Estoy tratando de ponerme en contacto con cosas nuevas, y todavía estoy muy confundido acerca de la dirección del futuro ... Paso a paso hacia el futuro.',
                 l3: 'Actualmente estoy usando el sistema operativo <span style="color: #1793d1">Arch Linux</span> y el entorno de escritorio <span style="color: #54a3d8">KDE Plasma</span>.',
                 things_liked: '🔎 Cosas que me gustan',
@@ -211,8 +215,9 @@ const textI18n = {
                 p3: 'Actualmente estoy aprendiendo <span style="color: #42b883">Vue</span><span style="color: #35495e">.js</span>, <span style="color: #007d9c">Golang</span> y <span style="color: #f74b00">Rust</span>.',
                 things_hated: '💢 Cosas que odio',
                 th1: 'Lo que más odio son <span style="color: #f45326">Wi</span><span style="color: #82bc06">nd</span><span style="color: #05a6f1">ow</span><span style="color: #ffbb08">s</span> y las personas que tienen una aventura.',
-                dream: '🌈 Sueño',
-                d1: 'Estoy tomando el examen de ingreso a la universidad en 2024. Mi objetivo es ingresar a la Universidad de Tecnología de Hefei. Después del aprendizaje futuro, quiero convertirme en un excelente desarrollador de pila completa.',
+                talk: '🌈 Lo que quiero decir ...',
+                t1: '"Esperaré hasta el momento de la reencarnación, y juraré al corazón que tiene amor por compasión"',
+                t2: 'De "Tsuki ni Murakumo Hana ni Kaze" de Yuuhei Satellite',
                 moe: '⛩ Moe ICP No. 20212688'
             }
         }
@@ -222,12 +227,12 @@ const textI18n = {
 const imgI18n = {
     'zh-cn': {
         channel: '频道',
-        name: '是一刀斩哒',
+        name: '斬風·千雪',
         group: '群'
     },
     'zh-tw': {
         channel: '頻道',
-        name: '是一刀斩哒',
+        name: '斬風·千雪',
         group: '羣'
     },
     'en-us': {

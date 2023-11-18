@@ -5,7 +5,7 @@ const fontmin = new Fontmin()
     .dest('build/fonts')
     .use(
         Fontmin.glyph({
-            text: '一刀斩の小窝'
+            text: '千雪的咖啡厅'
         })
     )
     .use(Fontmin.ttf2woff({deflate: true}))

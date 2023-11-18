@@ -1,13 +1,13 @@
 {
-  "name": "yidaozhan-homepage",
+  "name": "chiyuki-homepage",
   "version": "1.0.0",
   "type": "module",
-  "description": "YidaozhanYa's homepage",
+  "description": "Kirukaze Chiyuki's homepage",
   "scripts": {
     "dev": "cd src && live-server --port=8080 --no-browser --entry-file=index.html --mount=/fonts:../fonts",
     "build": "node build.js"
   },
-  "author": "YidaozhanYa",
+  "author": "Kirukaze Chiyuki",
   "license": "GPL 3.0",
   "dependencies": {
     "live-server": "^1.2.2",
