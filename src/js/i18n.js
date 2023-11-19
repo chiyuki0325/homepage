@@ -18,7 +18,7 @@ const textI18n = {
             home: {
                 welcome: '👋 欢迎来到斬風·千雪的主页！',
                 desc: {
-                    l1: '这里是斬風千雪 (Kirukaze Chiyuki)，一个居住在辽宁的，想长大的普通高三学生。',
+                    l1: '这里是斬風千雪 (Kirikaze Chiyuki)，一个居住在辽宁的，想长大的普通高三学生。',
                     l2: '我正在尝试着改变自己，为了成为一个更好的人而努力着。',
                     l3: '我正在尝试着接触新的事物，对未来的方向还很迷茫 ...',
                     l4: '走一步算一步吧。'
@@ -61,7 +61,7 @@ const textI18n = {
             home: {
                 welcome: '👋 歡迎來到斬風·千雪的主頁！',
                 desc: {
-                    l1: '這裡是斬風千雪 (Kirukaze Chiyuki)，一個居住在遼寧的，想長大的普通高三學生。',
+                    l1: '這裡是斬風千雪 (Kirikaze Chiyuki)，一個居住在遼寧的，想長大的普通高三學生。',
                     l2: '我正在嘗試著改變自己，為了成為一個更好的人而努力著。',
                     l3: '我正在嘗試著接觸新的事物，對未來的方向還很迷茫 ...',
                     l4: '走一步算一步吧。',
@@ -145,9 +145,9 @@ const textI18n = {
         },
         main: {
             home: {
-                welcome: '👋 Welcome to Kirukaze Chiyuki\'s Homepage!',
+                welcome: '👋 Welcome to Kirikaze Chiyuki\'s Homepage!',
                 desc: {
-                    l1: 'I\'m Kirukaze Chiyuki, a normal high school student living in Liaoning who wants to grow up.',
+                    l1: 'This is Kirikaze Chiyuki, a normal high school student living in Liaoning who wants to grow up.',
                     l2: 'I\'m trying to change myself and work hard to become a better person.',
                     l3: 'I\'m trying to get in touch with new things, and I\'m still very confused about the direction of the future ...',
                     l4: 'Step by step towards the future.',
@@ -157,7 +157,7 @@ const textI18n = {
             },
             about: {
                 about: '💖 About Me',
-                l1: 'I\'m Kirukaze Chiyuki, a normal high school student living in Liaoning who wants to grow up. I\'m trying to change myself and work hard to become a better person.',
+                l1: 'I\'m Kirikaze Chiyuki, a normal high school student living in Liaoning who wants to grow up. I\'m trying to change myself and work hard to become a better person.',
                 l2: 'I\'m trying to get in touch with new things, and I\'m still very confused about the direction of the future ... Step by step towards the future.',
                 l3: 'I\'m currently using <span style="color: #1793d1">Arch Linux</span> operating system and <span style="color: #54a3d8">KDE Plasma</span> desktop environment.',
                 things_liked: '🔎 Things I Liked',
@@ -188,9 +188,9 @@ const textI18n = {
         },
         main: {
             home: {
-                welcome: '👋 ¡Bienvenido a la página de hogar de Kirukaze Chiyuki!',
+                welcome: '👋 ¡Bienvenido a la página de hogar de Kirikaze Chiyuki!',
                 desc: {
-                    l1: 'Soy Kirukaze Chiyuki, un estudiante de secundaria normal que vive en Liaoning que quiere crecer.',
+                    l1: 'Soy Kirikaze Chiyuki, un estudiante de secundaria normal que vive en Liaoning que quiere crecer.',
                     l2: 'Estoy tratando de cambiarme a mí mismo y trabajar duro para convertirme en una mejor persona.',
                     l3: 'Estoy tratando de ponerme en contacto con cosas nuevas, y todavía estoy muy confundido acerca de la dirección del futuro ...',
                     l4: 'Paso a paso hacia el futuro.',
@@ -201,7 +201,7 @@ const textI18n = {
             about: {
                 about: '💖 Acerca de mí',
 
-                l1: 'Soy Kirukaze Chiyuki, un estudiante de secundaria normal que vive en Liaoning que quiere crecer. Estoy tratando de cambiarme a mí mismo y trabajar duro para convertirme en una mejor persona.',
+                l1: 'Soy Kirikaze Chiyuki, un estudiante de secundaria normal que vive en Liaoning que quiere crecer. Estoy tratando de cambiarme a mí mismo y trabajar duro para convertirme en una mejor persona.',
                 l2: 'Estoy tratando de ponerme en contacto con cosas nuevas, y todavía estoy muy confundido acerca de la dirección del futuro ... Paso a paso hacia el futuro.',
                 l3: 'Actualmente estoy usando el sistema operativo <span style="color: #1793d1">Arch Linux</span> y el entorno de escritorio <span style="color: #54a3d8">KDE Plasma</span>.',
                 things_liked: '🔎 Cosas que me gustan',
