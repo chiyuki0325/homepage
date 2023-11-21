@@ -43,7 +43,7 @@ const textI18n = {
                 things_hated: '💢 讨厌的东西',
                 th1: '最讨厌的东西是 <span style="color: #f45326">Wi</span><span style="color: #82bc06">nd</span><span style="color: #05a6f1">ow</span><span style="color: #ffbb08">s</span>，最讨厌的人是牛头人。',
                 talk: '🌈 想说的话 ...',
-                t1: '「我会等候至轮回之时，对这颗因怜悯而萌生爱意的心起誓」',
+                t1: '「冲破云霄，撕裂劲风，引导我进入动摇的永恒」',
                 t2: '摘自幽闭星光的《月に叢雲華に風》',
                 moe: '⛩ 萌 ICP 备 20212688'
             }
@@ -86,7 +86,7 @@ const textI18n = {
                 things_hated: '💢 討厭的東西',
                 th1: '最討厭的東西是 <span style="color: #f45326">Wi</span><span style="color: #82bc06">nd</span><span style="color: #05a6f1">ow</span><span style="color: #ffbb08">s</span>，最討厭的人是牛頭人。',
                 talk: '🌈 想說的話 ...',
-                t1: '「我會等候至輪迴之時，對這顆因憐憫而萌生愛意的心起誓」',
+                t1: '「衝破雲霄，撕裂勁風，引導我進入動搖的永恆」',
                 t2: '摘自幽閉星光的《月に叢雲華に風》',
                 moe: '⛩ 萌 ICP 備 20212688'
             }
@@ -129,7 +129,7 @@ const textI18n = {
                 "things_hated": "💢 嫌いなもの",
                 "th1": "一番嫌いなのは <span style=\"color: #f45326\">Wi</span><span style=\"color: #82bc06\">nd</span><span style=\"color: #05a6f1\">ow</span><span style=\"color: #ffbb08\">s</span> です、一番嫌いなのは「寝取られ」の人たちです。",
                 "talk": "🌈 言いたいこと ...",
-                "t1": "「待ち続けよう輪廻の時を、慈しむ心に誓って」",
+                "t1": "「雲突き抜け　風斬り裂いて、久遠の揺蕩いへ　誘う」",
                 "t2": "幽閉サテライトの「月に叢雲華に風」から",
                 "moe": "⛩ 萌 ICP No. 20212688"
             }
@@ -172,7 +172,7 @@ const textI18n = {
                 things_hated: '💢 Things I Hated',
                 th1: 'What I hate most are <span style="color: #f45326">Wi</span><span style="color: #82bc06">nd</span><span style="color: #05a6f1">ow</span><span style="color: #ffbb08">s</span> and people who have an affair.',
                 talk: '🌈 What I want to say ...',
-                t1: '"I will wait until the time of reincarnation, and swear to the heart that has love because of compassion"',
+                t1: '"Break through the mass of clouds, slash through the mighty wind, then lead me into vacillate eternity."',
                 t2: 'From Yuuhei Satellite\'s "Tsuki ni Murakumo Hana ni Kaze"',
                 moe: '⛩ Moe ICP No. 20212688'
             }
@@ -216,7 +216,7 @@ const textI18n = {
                 things_hated: '💢 Cosas que odio',
                 th1: 'Lo que más odio son <span style="color: #f45326">Wi</span><span style="color: #82bc06">nd</span><span style="color: #05a6f1">ow</span><span style="color: #ffbb08">s</span> y las personas que tienen una aventura.',
                 talk: '🌈 Lo que quiero decir ...',
-                t1: '"Esperaré hasta el momento de la reencarnación, y juraré al corazón que tiene amor por compasión"',
+                t1: '"Rompe la masa de nubes, corta el poderoso viento, luego llévame a la eternidad vacilante."',
                 t2: 'De "Tsuki ni Murakumo Hana ni Kaze" de Yuuhei Satellite',
                 moe: '⛩ Moe ICP No. 20212688'
             }
