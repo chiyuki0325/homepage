@@ -1,0 +1,65 @@
+@import "config.styl"
+
+
+#container-home-grid
+  display: grid
+  grid-template-columns: 1fr 500px
+  grid-template-areas: "left right"
+  gap: 1rem
+  @media (max-width: 1000px)
+    display: flex
+    flex-direction: column
+
+
+#rss
+  display: flex
+  flex-direction: column
+  margin-top: 18px
+
+
+.rss-element
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin-bottom: 0.5rem
+  transition: transform 0.1s $anim
+  transform: scaleY(0) translateY(-1rem)
+
+
+.rss-title
+  cursor: pointer
+  width: calc(100% - 5rem)
+
+
+.rss-date
+  color: #999
+
+
+.shields
+  display: flex
+  flex-direction: row
+  gap: 0.5rem
+  > *
+    text-decoration: none
+
+svg.loading {
+  display: block;
+  color: #6f7173;
+  z-index: -1;
+  width: 100%;
+  height: 2rem;
+  margin: auto;
+  animation: spin infinite 2s linear;
+  vertical-align: middle
+  fill: currentColor
+  overflow: hidden
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

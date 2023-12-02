@@ -43,7 +43,7 @@ body
   display: flex
   justify-content: center
   height: 100%
-  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)
+  transition: opacity 0.4s $anim
 
   top: 80px
 
@@ -57,7 +57,11 @@ body
   flex-direction: column
   gap: 2rem
 
-  width: @css{min(1200px, 100vw)}
+  width:
+
+@css
+
+{min(1200px, 100vw)}
 
 
 // 头部，网站名
@@ -75,7 +79,7 @@ body
 #avatar
   border-radius: 50%
   border: 2px solid #fff
-  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+  transition: box-shadow 0.2s $anim
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.12),
           0 calc(4 * 0.5px) calc((4 * 1px)) rgba(0, 0, 0, 0.14)
 
@@ -124,4 +128,41 @@ body
   cursor: default
   text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5)
   border-bottom: $theme-color 2px solid
-  border-radius: 0 0 1px 1px
+  border-radius: 0 0 1px 1px /
+
+
+// 主体部分
+#containers
+  overflow: auto
+
+
+.container
+  margin-top: 0.5rem
+  margin-right: 0.5rem
+  margin-left: 0.5rem
+  transition: opacity 0.1s ease-in-out
+  opacity: 0
+
+  &.container-animated
+    opacity: 1
+
+
+.container li
+  margin-bottom: 0.5rem
+
+
+.gap
+  height: 1rem
+
+
+.bigger, .bigger *
+  font-size: 1.2rem
+
+
+.smaller, .smaller *
+  font-size: 0.8rem
+
+
+.para
+    margin-top: 1rem
+    margin-bottom: 1rem
