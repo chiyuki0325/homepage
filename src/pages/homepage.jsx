@@ -37,7 +37,7 @@ function RssItem({title, date, link}) {
   }, 100)
   return <div className="rss-element" ref={ref}>
     <div className="rss-title"><a href={link}>{title}</a></div>
-    <div className="rss-date">{date.toLocaleString()}</div>
+    <div className="rss-date">{date.toLocaleDateString()}</div>
   </div>
 }
 
@@ -45,12 +45,14 @@ function RssItem({title, date, link}) {
 function Rss() {
   const [items, setItems] = useState([])
   const [loading, setLoading] = useState(true)
+  const [itemsCount, setItemsCount] = useState(0)
 
   useEffect(() => {
-    let isMounted = true;
+    let isMounted = true
 
-    const fetchData = async () => {
+    const fetchData = () => {
       try {
+        console.log("Fetching RSS...")
         fetch("https://blog.chyk.ink/atom.xml")
           .then(res => res.text())
           .then(text => {
@@ -68,14 +70,16 @@ function Rss() {
               count++
               if (count <= 5) {
                 const entry = entries[count]
-                _items.push({
+                const item = {
                   title: entry.querySelector('title').textContent,
                   date: new Date(entry.querySelector('updated').textContent),
                   link: entry.querySelector('link').getAttribute('href'),
                   key: count
-                })
+                }
+                _items.push(item)
 
                 setItems(_items)
+                setItemsCount(count)  // 为了触发组件的重新渲染
               } else {
                 clearInterval(intervalId)
               }
@@ -98,11 +102,11 @@ function Rss() {
   }, []) // Empty dependency array ensures the effect runs only once
 
   if (loading) {
-    return <div id="rss"><Loading/></div>;
+    return <div id="rss"><Loading/></div>
   } else {
-    return <div id="rss">
+    return <div id="rss" data-count={itemsCount}>
       {items.map(item => <RssItem key={item.key} {...item} />)}
-    </div>;
+    </div>
   }
 }
 
