@@ -1,0 +1,127 @@
+@import "config.styl"
+
+// 通用部分
+disable-select()
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  user-select: none
+
+
+*
+  font-size: 18px
+
+  --theme-color: $theme-color
+  color: #000
+
+  @media (prefers-color-scheme: dark)
+    --theme-color: $dark-theme-color
+    color: #fff
+
+@media (max-width: 1000px)
+  *
+    font-size: 16px
+
+
+a
+  // 禁用下划线
+  text-decoration: none
+
+
+div
+  disable-select()
+
+
+body
+  margin: 0
+  overflow-x: hidden
+
+
+// 主体部分
+#main-outer
+  position: fixed
+  width: 100vw
+  display: flex
+  justify-content: center
+  height: 100%
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)
+
+  top: 80px
+
+  @media (max-width: 1000px)
+    top: 0
+
+
+#main
+  padding: 1rem
+  display: flex
+  flex-direction: column
+  gap: 2rem
+
+  width: @css{min(1200px, 100vw)}
+
+
+// 头部，网站名
+#header
+  display: flex
+  flex-direction: row
+  align-items: center
+  gap: 21px
+
+
+#header img
+  disable-select()
+
+
+#avatar
+  border-radius: 50%
+  border: 2px solid #fff
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12),
+          0 calc(4 * 0.5px) calc((4 * 1px)) rgba(0, 0, 0, 0.14)
+
+  width: 120px
+  @media (max-width: 550px)
+    width: 20vw
+
+  &:hover
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1),
+            0 4px 16px 0 rgba(0, 0, 0, 0.1)
+
+
+#header-right
+  display: flex
+  flex-direction: column
+
+
+#site-name
+  font-family: "Smiley Sans Oblique", system-ui, sans-serif
+  font-size: 48px
+  color: #000
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5)
+
+  @media (prefers-color-scheme: dark)
+    color: #fff
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5)
+
+  @media (max-width: 550px)
+    // 迫真精密计算
+    font-size: calc(calc(calc(80vw - 21px) / 6) * 0.8)
+
+
+// 标签导航
+#tabs
+  display: flex
+  flex-direction: row
+  gap: 1rem
+  margin-top: 16px
+
+
+.tab
+  cursor: pointer
+
+
+.tab-active
+  cursor: default
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5)
+  border-bottom: $theme-color 2px solid
+  border-radius: 0 0 1px 1px

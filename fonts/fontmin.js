@@ -1,8 +1,8 @@
-const Fontmin = require('fontmin');
+import Fontmin from "fontmin"
 
 const fontmin = new Fontmin()
-    .src('SmileySans-Oblique.ttf')
-    .dest('build/fonts')
+    .src('fonts/SmileySans-Oblique.ttf')
+    .dest('public/fonts')
     .use(
         Fontmin.glyph({
             text: '千雪的咖啡厅'

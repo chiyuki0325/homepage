@@ -1,18 +1,33 @@
 {
   "name": "chiyuki-homepage",
   "version": "1.0.0",
-  "type": "module",
-  "description": "Kirukaze Chiyuki's homepage",
-  "scripts": {
-    "dev": "cd src && live-server --port=8080 --no-browser --entry-file=index.html --mount=/fonts:../fonts",
-    "build": "node build.js"
-  },
+  "description": "Kirikaze Chiyuki's homepage",
   "author": "Kirikaze Chiyuki",
   "email": "me@chyk.ink",
   "license": "GPL 3.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "build-fonts": "node ./fonts/fontmin.js"
+  },
   "dependencies": {
-    "live-server": "^1.2.2",
-    "minify": "^9.2.0",
-    "uglify-js": "^3.17.4"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "eslint": "^8.53.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.4",
+    "fontmin": "^1.0.1",
+    "stylus": "^0.62.0",
+    "vite": "^5.0.0"
   }
 }
