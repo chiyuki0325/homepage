@@ -1,0 +1,83 @@
+@import "config.styl"
+
+#container-comments
+  max-width: 70%
+
+  @media (max-width: 1000px)
+    max-width: 100%
+
+
+#valine .vcards .vcontent
+  -webkit-touch-callout: default
+  -webkit-user-select: text
+  user-select: text
+
+
+
+#waline
+  font-size: 14px
+  *
+    font-size: 14px
+
+  // --waline-font-size: 0.9375rem
+  /* 常规颜色 */
+  --waline-white: #fff
+  --waline-light-grey: #999
+  --waline-dark-grey: #666
+  /* 主题色 */
+  --waline-theme-color: $theme-color
+  --waline-active-color: $theme-color
+  /* 布局颜色 */
+  --waline-color: #444
+  --waline-bgcolor: #fff
+  --waline-bgcolor-light: #f8f8f8
+  --waline-bgcolor-hover: #f0f0f0
+  --waline-border-color: #ddd
+  --waline-disable-bgcolor: #f8f8f8
+  --waline-disable-color: #bbb
+  --waline-code-bgcolor: #282c34
+  /* 特殊颜色 */
+  --waline-bq-color: #f0f0f0
+  /* 头像 */
+  --waline-avatar-size: 3.25rem
+  --waline-m-avatar-size: calc(var(--waline-avatar-size) * 9 / 13)
+  /* 徽章 */
+  --waline-badge-color: $theme-color
+  --waline-badge-font-size: 0.725em
+  /* 信息 */
+  --waline-info-bgcolor: #f8f8f8
+  --waline-info-color: #999
+  --waline-info-font-size: 0.725em
+  /* 渲染选择 */
+  --waline-border: 1px solid var(--waline-border-color)
+  --waline-avatar-radius: 50%
+  --waline-box-shadow: none
+
+
+#waline .wl-panel
+  margin: unset !important
+
+
+@media (prefers-color-scheme: dark)
+  #waline
+    --waline-theme-color: $dark-theme-color
+    --waline-active-color: $dark-theme-color
+    --waline-badge-color: $dark-theme-color
+    --waline-white: #000
+    --waline-light-grey: #666
+    --waline-dark-grey: #999
+    --waline-color: #fff
+    --waline-bgcolor: rgba(43,47,51,0.698)
+    --waline-bgcolor-light: #272727
+    --waline-border-color: #333
+    --waline-disable-bgcolor: #444
+    --waline-disable-color: #272727
+    --waline-bq-color: #272727
+    --waline-info-bgcolor: #272727
+    --waline-info-color: #666
+
+  .wl-count
+    padding: 0.375em
+    font-weight: bold
+    font-size: 1.25em
+    color: #fff
