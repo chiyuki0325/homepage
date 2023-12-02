@@ -52,7 +52,6 @@ function Rss() {
 
     const fetchData = () => {
       try {
-        console.log("Fetching RSS...")
         fetch("https://blog.chyk.ink/atom.xml")
           .then(res => res.text())
           .then(text => {

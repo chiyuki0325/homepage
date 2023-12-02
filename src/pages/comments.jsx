@@ -15,7 +15,8 @@ export default function Comments() {
 
   function loadWalineAssets(fn) {
     if (document.getElementById("waline-script") !== null) {
-      document.getElementById("waline-script").onload = fn
+      document.getElementById("waline-script").remove()
+      document.getElementById("waline-style").remove()
     }
 
     const scriptWaline = document.createElement('script')
@@ -25,6 +26,7 @@ export default function Comments() {
     const styleWaline = document.createElement('link')
     styleWaline.rel = 'stylesheet'
     styleWaline.href = 'https://ydz-cos.zyglq.cn/blog-static/css/waline.css'
+    styleWaline.setAttribute("id", "waline-style")
 
     document.head.appendChild(styleWaline)
     document.body.appendChild(scriptWaline)
