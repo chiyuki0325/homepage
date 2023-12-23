@@ -291,9 +291,11 @@ export function i18nImg(url) {
   const localeId = getLocaleId()
   if (url.includes("{{")) {
     const matches = url.match(/{{(.+)}}/)
-    matches.forEach((match, _) => {
-      url = url.replace(match, imgI18n[localeId][match.replace("{{", "").replace("}}", "")])
-    })
+    if (matches) {
+      matches.forEach((match, _) => {
+        url = url.replace(match, imgI18n[localeId][match.replace("{{", "").replace("}}", "")])
+      })
+    }
   }
   return url
 }
