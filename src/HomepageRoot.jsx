@@ -58,7 +58,7 @@ function Header({onTabClick}) {
     <div id="header">
       <img src="https://q1.qlogo.cn/g?b=qq&nk=3526514925&s=640" alt="avatar" id="avatar"/>
       <div id="header-right">
-        <div id="site-name">千雪的咖啡厅</div>
+        <div id="site-name">斬風·千雪</div>
         <Tabs onTabClick={onTabClick}/>
       </div>
     </div>

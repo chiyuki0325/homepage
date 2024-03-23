@@ -1,11 +1,11 @@
 import Fontmin from "fontmin"
 
 const fontmin = new Fontmin()
-  .src('fonts/SmileySans-Oblique.ttf')
+  .src('fonts/LXGWBoldWenKai.ttf')
   .dest('public/fonts')
   .use(
     Fontmin.glyph({
-      text: '千雪的咖啡厅'
+      text: '斬風·千雪'
     })
   )
   .use(Fontmin.ttf2woff({deflate: true}))

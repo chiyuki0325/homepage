@@ -1,15 +1,8 @@
-@import 'https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css';
-/* 睿叔叔的字体 */
-
 @font-face {
-    font-family: "Smiley Sans Oblique";
-    src: url("/fonts/SmileySans-Oblique.woff2") format("woff2"), /* NEWEST AND HOTTEST browsers */
-    url("/fonts/SmileySans-Oblique.woff") format("woff"), /* Dickful browsers */
-    url("/fonts/SmileySans-Oblique.ttf") format("truetype"); /* Super dickful browsers */
+    font-family: "LXGWWenKai-Bold";
+    src: url("/fonts/LXGWBoldWenKai.woff2") format("woff2"), /* NEWEST AND HOTTEST browsers */
+    url("/fonts/LXGWBoldWenKai.woff") format("woff"), /* Dickful browsers */
+    url("/fonts/LXGWBoldWenKai.ttf") format("truetype"); /* Super dickful browsers */
     font-style: normal;
     font-weight: normal;
-}
-
-* {
-    font-family: "HarmonyOS_Regular", sans-serif;
 }

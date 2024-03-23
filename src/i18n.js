@@ -1,8 +1,8 @@
 const titleI18n = {
-  'zh-cn': '千雪的咖啡厅 ~',
-  'zh-tw': '千雪的咖啡廳 ~',
-  'en-us': "Chiyuki's Homepage ~",
-  'es-es': 'Hogar de Chiyuki ~'
+  'zh-cn': '斬風·千雪 ❄️',
+  'zh-tw': '斬風·千雪 ❄️',
+  'en-us': "Kirikaze Chiyuki's Homepage ~",
+  'es-es': 'Hogar de Kirikaze Chiyuki ~'
 }
 
 const textI18n = {
