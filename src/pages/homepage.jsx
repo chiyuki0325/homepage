@@ -127,7 +127,7 @@ function LeftGrid() {
         <Shield url="https://img.shields.io/badge/Telegram-chiyuki0325-28a8ea?logo=telegram"
                 alt="Telegram:chiyuki0325"/>
       </a>
-      <a href="https://t.me/s/chiyuki_cafe">
+      <a href="https://t.me/s/chykink">
         <Shield url="https://img.shields.io/badge/Telegram-{{channel}}-28a8ea?logo=telegram"
                 alt="Telegram 频道"/>
       </a>
