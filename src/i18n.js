@@ -18,7 +18,7 @@ const textI18n = {
       home: {
         welcome: "👋 欢迎来到斬風·千雪的主页！",
         desc: {
-          l1: "这里是斬風千雪 (Kirikaze Chiyuki)，一个居住在辽宁的，想长大的普通学生。",
+          l1: "这里是斬風千雪 (Kirikaze Chiyuki)，一个居住在辽宁的，想长大的普通学生，目前就读于东北大学软件学院。",
           l2: "我正在尝试着改变自己，为了成为一个更好的人而努力着。",
           l3: "我正在尝试着接触新的事物，对未来的方向还很迷茫 ...",
           l4: "走一步算一步吧。",
@@ -28,7 +28,7 @@ const textI18n = {
       },
       about: {
         about: "💖 关于我",
-        l1: "这里是斬風千雪，一个居住在辽宁的，想长大的普通学生。我正在尝试着改变自己，为了成为一个更好的人而努力着。",
+        l1: "这里是斬風千雪，一个居住在辽宁的，想长大的普通学生，目前就读于东北大学软件学院。我正在尝试着改变自己，为了成为一个更好的人而努力着。",
         l2: "我正在尝试着接触新的事物，对未来的方向还很迷茫 ... 走一步算一步吧。",
         l3: '我目前使用 <span style="color: #1793d1">Arch Linux</span> 操作系统和 <span style="color: #54a3d8">KDE</span> 桌面。',
         things_liked: "🔎 喜欢的东西",
@@ -61,7 +61,7 @@ const textI18n = {
       home: {
         welcome: "👋 歡迎來到斬風·千雪的主頁！",
         desc: {
-          l1: "這裡是斬風千雪 (Kirikaze Chiyuki)，一個居住在遼寧的，想長大的普通學生。",
+          l1: "這裡是斬風千雪 (Kirikaze Chiyuki)，一個居住在遼寧的，想長大的普通學生，目前就讀於東北大學軟件學院。",
           l2: "我正在嘗試著改變自己，為了成為一個更好的人而努力著。",
           l3: "我正在嘗試著接觸新的事物，對未來的方向還很迷茫 ...",
           l4: "走一步算一步吧。",
@@ -71,7 +71,7 @@ const textI18n = {
       },
       about: {
         about: "💖 關於我",
-        l1: "這裡是斬風千雪，一個居住在遼寧的，想長大的普通學生。我正在嘗試著改變自己，為了成為一個更好的人而努力著。",
+        l1: "這裡是斬風千雪，一個居住在遼寧的，想長大的普通學生，目前就讀於東北大學軟件學院。我正在嘗試著改變自己，為了成為一個更好的人而努力著。",
         l2: "我正在嘗試著接觸新的事物，對未來的方向還很迷茫 ... 走一步算一步吧。",
         l3: '我目前使用 <span style="color: #1793d1">Arch Linux</span> 操作系統和 <span style="color: #54a3d8">KDE</span> 桌面。',
         things_liked: "🔎 喜歡的東西",
@@ -104,7 +104,7 @@ const textI18n = {
       home: {
         welcome: "👋 斬風 千雪のホームページへようこそ！",
         desc: {
-          l1: "私は 斬風 千雪、遼寧に住んでいる、成長したい普通の大学生です。",
+          l1: "私は 斬風 千雪、遼寧に住んでいる、成長したい普通の大学生です。現在、中国の東北大学ソフトウェア学部に留学中。",
           l2: "私は自分を変えようとしています、そして、より良い人になるために努力しています。",
           l3: "私は新しいことに触れようとしていますが、未来の方向についてはまだ非常に混乱しています...",
           l4: "未来に向けて一歩ずつ。",
@@ -114,7 +114,7 @@ const textI18n = {
       },
       about: {
         about: "💖 私について",
-        l1: "私は 斬風 千雪、遼寧に住んでいる、成長したい普通の大学生です。私は自分を変えようとしています、そして、より良い人になるために努力しています。",
+        l1: "私は 斬風 千雪、遼寧に住んでいる、成長したい普通の大学生です。現在、中国の東北大学ソフトウェア学部に留学中。私は自分を変えようとしています、そして、より良い人になるために努力しています。",
         l2: "私は新しいことに触れようとしていますが、未来の方向についてはまだ非常に混乱しています...未来に向けて一歩ずつ。",
         l3: '現在、私は <span style="color: #1793d1">Arch Linux</span> オペレーティングシステムと <span style="color: #54a3d8">KDE</span> デスクトップを使用しています。',
         things_liked: "🔎 好きなもの",
@@ -147,7 +147,7 @@ const textI18n = {
       home: {
         welcome: "👋 Welcome to Kirikaze Chiyuki's Homepage!",
         desc: {
-          l1: "This is Kirikaze Chiyuki, an ordinary student living in Liaoning who wants to grow up.",
+          l1: "This is Kirikaze Chiyuki, an ordinary student living in Liaoning who wants to grow up. I'm currently studying at Software College, Northeastern University of China.",
           l2: "I'm trying to change myself and work hard to become a better person.",
           l3: "I'm trying to get in touch with new things, and I'm still very confused about the direction of the future ...",
           l4: "Step by step towards the future.",
@@ -157,7 +157,7 @@ const textI18n = {
       },
       about: {
         about: "💖 About Me",
-        l1: "I'm Kirikaze Chiyuki, an ordinary college student living in Liaoning who wants to grow up. I'm trying to change myself and work hard to become a better person.",
+        l1: "I'm Kirikaze Chiyuki, an ordinary college student living in Liaoning who wants to grow up. I'm currently studying at Software College, Northeastern University of China. I'm trying to change myself and work hard to become a better person.",
         l2: "I'm trying to get in touch with new things, and I'm still very confused about the direction of the future ... Step by step towards the future.",
         l3: 'I\'m currently using <span style="color: #1793d1">Arch Linux</span> operating system and <span style="color: #54a3d8">KDE Plasma</span> desktop environment.',
         things_liked: "🔎 Things I Liked",
