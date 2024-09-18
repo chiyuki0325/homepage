@@ -216,7 +216,7 @@ function _getLocaleId() {
     case "en-us":
     case "en":
     case "en-gb":
-      return "en-us";\
+      return "en-us";
     case "ja-jp":
     case "ja":
       return "ja-jp";
