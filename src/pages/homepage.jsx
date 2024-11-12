@@ -123,17 +123,13 @@ function LeftGrid() {
     <Gap/>
     <div className="bigger">{t("main.home.contact")}</div>
     <Shields>
-      <a href="https://t.me/chiyuki0325">
-        <Shield url="https://img.shields.io/badge/Telegram-chiyuki0325-28a8ea?logo=telegram"
-                alt="Telegram:chiyuki0325"/>
-      </a>
       <a href="https://t.me/s/chykink">
         <Shield url="https://img.shields.io/badge/Telegram-{{channel}}-28a8ea?logo=telegram"
                 alt="Telegram 频道"/>
       </a>
       <a href="https://space.bilibili.com/485832788">
         <Shield url="https://img.shields.io/badge/Bilibili-{{name}}-ff6699?logo=bilibili"
-                alt="Bilibili:斬風·千雪"/>
+                alt="Bilibili:斬風千雪"/>
       </a>
       <span>
       <Shield url="https://img.shields.io/badge/QQ{{group}}-920064067-faad01?logo=tencentqq"
