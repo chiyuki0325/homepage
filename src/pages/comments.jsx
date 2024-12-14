@@ -20,7 +20,7 @@ export default function Comments() {
     }
 
     const scriptWaline = document.createElement('script')
-    scriptWaline.src = 'https://ydz-cos.zyglq.cn/blog-static/js/waline.js'
+    scriptWaline.src = 'https://ydz-cos.zyglq.cn/blog-static/js/waline.umd.js?v=3'
     scriptWaline.setAttribute("id", "waline-script")
 
     const styleWaline = document.createElement('link')
