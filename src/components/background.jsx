@@ -18,7 +18,7 @@ export default function Background() {
     "0df3d7ca7bcb0a468410390f2d63f6246b60afd2",
     "3b292df5e0fe99257021db6672a85edf8db171d3"
   ]
-  const bg = `//imgsrc.chyk.ink/site_bg/${bgIds[Math.floor(Math.random() * bgIds.length)]}.webp`
+  const bg = `//imgsrc.chyk.ink/site_bg_premade/${bgIds[Math.floor(Math.random() * bgIds.length)]}.webp`
   return <>
     <div id="bg" style={{backgroundImage: `url(${bg})`}}></div>
     <div id="bg-layer"></div>
