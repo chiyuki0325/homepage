@@ -24,14 +24,14 @@ filter()
   top: 0
   left: 0
   position: fixed
-  backdrop-filter blur(40px) brightness(1.01)
+  backdrop-filter brightness(1.01)
 
   background-color: $background-color
 
   @media (prefers-color-scheme: light)
-    backdrop-filter blur(40px) brightness(1.01)
+    backdrop-filter brightness(1.01)
     filter saturate(1.1)
 
   @media (prefers-color-scheme: dark)
-    backdrop-filter blur(40px) brightness(0.9)
+    backdrop-filter brightness(0.9)
     background-color: $dark-background-color
