@@ -37,7 +37,7 @@ export default function About() {
     <div className="bigger">{t("main.about.talk")}</div>
     <Para i18n_id="main.about.t1"/>
     <Para i18n_id="main.about.t2"/>
-    <a className="smaller" href="https://icp.gov.moe/?keyword=20212688">{t("main.about.moe")}</a>
+    
     <div className="smaller">Powered by <a href="https://reactjs.org/">React</a> & <a href="https://vitejs.dev/">Vite</a></div>
     {[...Array(6).keys()].map((i) => <Gap key={i}/>)}
   </div>
