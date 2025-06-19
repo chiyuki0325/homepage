@@ -1,7 +1,7 @@
 const titleI18n = {
-  "zh-cn": "斬風·千雪 ❄️",
-  "zh-tw": "斬風·千雪 ❄️",
-  "ja-jp": "斬風·千雪 ❄️",
+  "zh-cn": "斬風千雪 ❄️",
+  "zh-tw": "斬風千雪 ❄️",
+  "ja-jp": "斬風千雪 ❄️",
   "en-us": "Kirikaze Chiyuki's Homepage ~",
 };
 
@@ -16,7 +16,7 @@ const textI18n = {
     },
     main: {
       home: {
-        welcome: "👋 欢迎来到斬風·千雪的主页！",
+        welcome: "👋 欢迎来到斬風千雪的主页！",
         desc: {
           l1: "这里是斬風千雪 (Kirikaze Chiyuki)，一个居住在辽宁的，想长大的普通学生，目前就读于东北大学软件学院。",
           l2: "我正在尝试着改变自己，为了成为一个更好的人而努力着。",
@@ -59,7 +59,7 @@ const textI18n = {
     },
     main: {
       home: {
-        welcome: "👋 歡迎來到斬風·千雪的主頁！",
+        welcome: "👋 歡迎來到斬風千雪的主頁！",
         desc: {
           l1: "這裡是斬風千雪 (Kirikaze Chiyuki)，一個居住在遼寧的，想長大的普通學生，目前就讀於東北大學軟件學院。",
           l2: "我正在嘗試著改變自己，為了成為一個更好的人而努力著。",
@@ -183,12 +183,12 @@ const textI18n = {
 const imgI18n = {
   "zh-cn": {
     channel: "频道",
-    name: "斬風·千雪",
+    name: "斬風千雪",
     group: "群",
   },
   "zh-tw": {
     channel: "頻道",
-    name: "斬風·千雪",
+    name: "斬風千雪",
     group: "羣",
   },
   "en-us": {
