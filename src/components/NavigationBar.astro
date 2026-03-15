@@ -1,0 +1,66 @@
+---
+interface NavItem {
+  name: string
+  href: string
+}
+
+const navItems: NavItem[] = [
+  { name: "主页", href: "/" },
+  { name: "博客", href: "https://blog.chyk.ink" },
+  { name: "项目", href: "/projects" },
+  { name: "留言板", href: "/guestbook" },
+  { name: "联系我", href: "/contact" },
+]
+
+const { activated = "/" } = Astro.props;
+---
+
+<nav>
+  {navItems.map(({ name, href }) => <a href={href} class={href === activated ? "active" : ""} data-astro-prefetch>{name}</a>)}
+</nav>
+
+<style lang="scss">
+  nav {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    margin: 6rem 0;
+    height: calc(100vh - 12rem);
+    width: 2rem;
+
+    position: fixed;
+    translate: -2rem 0;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 2px;
+      height: 100%;
+      background-color: #1a1f3526;
+      position: relative;
+      left: calc(2.5rem + 2px);
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 1.5rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 2px;
+      height: 0;
+      background-color: var(--accent-color);
+      position: absolute;
+      top: 0;
+      left: 2.5rem;
+      transition: height 0.3s ease;
+    }
+
+    &:hover::after, &.active::after {
+      height: 100%;
+    }
+  }
+</style>

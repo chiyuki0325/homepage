@@ -1,0 +1,100 @@
+---
+import { ClientRouter } from "astro:transitions";
+import Header from "./Header.astro"
+import NavigationBar from "./NavigationBar.astro"
+
+const { activated = "/" } = Astro.props
+---
+<ClientRouter />
+
+<body>
+  <div class="main">
+    <div id="nav-placeholder"></div>
+    <NavigationBar activated={activated} />
+    <div class="content-wrapper">
+      <Header />
+      <div class="slot-wrapper">
+        <slot />
+      </div>
+    </div>
+  </div>
+</body>
+
+<style lang="scss" is:global>
+  body {
+    --light-background: #f3f3f3 radial-gradient(#eff4f9 75%, #f3f3f3 100%)
+      no-repeat fixed;
+    --dark-background: #202020 radial-gradient(#1a1f35 25%, #202020 100%)
+      no-repeat fixed;
+
+    --light-background-color: #f3f3f3;
+    --dark-background-color: #202020;
+
+    --light-font-color: #0c182b;
+    --dark-font-color: #fbfdff;
+
+    --light-accent-color: #0078d4;
+    --dark-accent-color: #4cc2ff;
+
+    --background: var(--light-background);
+    --background-color: var(--light-background-color);
+    --font-color: var(--light-font-color);
+    --accent-color: var(--light-accent-color);
+
+    margin: 0;
+    padding: 0;
+    background: var(--background);
+    min-height: 100vh;
+
+    color: var(--font-color);
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    width: min(95vw, 1000px);
+    gap: 5rem;
+  }
+
+  .content-wrapper {
+    flex-grow: 1;
+    max-width: 900px;
+    min-width: 0;
+  }
+
+  .slot-wrapper {
+    margin: 2rem 0;
+  }
+
+  html {
+    font-size: 18px;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      --background: var(--dark-background);
+      --background-color: var(--dark-background-color);
+      --font-color: var(--dark-font-color);
+      --accent-color: var(--dark-accent-color);
+    }
+  }
+
+  /* 移动端字体缩小 */
+  @media (max-width: 600px) {
+    html {
+      font-size: 14px;
+    }
+  }
+</style>

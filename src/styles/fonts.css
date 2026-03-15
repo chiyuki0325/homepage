@@ -1,8 +1,6 @@
-@font-face {
-    font-family: "LXGWWenKai-Bold";
-    src: url("/fonts/LXGWBoldWenKai.woff2") format("woff2"), /* NEWEST AND HOTTEST browsers */
-    url("/fonts/LXGWBoldWenKai.woff") format("woff"), /* Dickful browsers */
-    url("/fonts/LXGWBoldWenKai.ttf") format("truetype"); /* Super dickful browsers */
-    font-style: normal;
-    font-weight: normal;
+@import 'lxgw-wenkai-lite-webfont/lxgwwenkailite-regular.css';
+@import 'lxgw-wenkai-lite-webfont/lxgwwenkailite-bold.css';
+
+* {
+    font-family: LXGW WenKai Lite, sans-serif;
 }

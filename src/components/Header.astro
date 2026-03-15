@@ -1,0 +1,95 @@
+<header>
+  <img src="/avatar.webp" alt="头像" class="avatar" />
+  <div>
+    <h1>斩风千雪 ❄️</h1>
+    <h2 id="subtitle" style="--len: 30">记忆流动着，像水面上的浮冰 ...</h2>
+  </div>
+</header>
+
+<script>
+  interface Subtitle {
+    text: string
+    len: number
+  }
+
+  const subtitles: Subtitle[] = [
+    { text: "记忆流动着，像水面上的浮冰 ...", len: 30 },
+    { text: "我们所书写的故事尚未完结 ...", len: 28 },
+    { text: "像浩繁星空下的那场稚嫩的梦 ...", len: 30 },
+    { text: "牵起的双手又怎能再放下 ...", len: 26 },
+  ]
+
+  let subtitleIndex = 0
+
+  function nextSubtitle() {
+    const el = document.getElementById("subtitle")
+    if (!el) return
+
+    const { text, len } = subtitles[subtitleIndex]
+    el.textContent = text
+    el.style.setProperty("--len", len.toString())
+
+    el.classList.remove("typing-animated")
+    setTimeout(() => {
+      el.classList.add("typing-animated")
+    }, 10)
+
+    subtitleIndex = (subtitleIndex + 1) % subtitles.length
+  }
+  document.addEventListener("astro:page-load", () => {
+    nextSubtitle()
+  })
+  setInterval(nextSubtitle, 10000)
+</script>
+
+<style lang="scss">
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.2rem;
+
+    margin-top: 6rem;
+
+    .avatar {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      border: 1px solid transparent;
+      box-shadow: 0 0 7px #1a1f3526;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin: 0;
+      margin-bottom: 0.3rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      color: color-mix(
+        in srgb,
+        var(--light-font-color),
+        var(--light-background-color) 50%
+      );
+      margin: 0;
+
+      opacity: 0;
+    }
+
+    .typing-animated {
+      opacity: 1;
+      width: calc(var(--len) * 1ch);
+      white-space: nowrap;
+      overflow: hidden;
+
+      animation: typing 2s steps(var(--len));
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+      }
+    }
+  }
+</style>
