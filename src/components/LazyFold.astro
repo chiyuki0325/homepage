@@ -1,0 +1,49 @@
+---
+const { title } = Astro.props
+const randomId = Math.random().toString(36).substring(2, 15)
+---
+
+<div class="lazy-fold">
+  <details>
+    <summary id={randomId}>{title}</summary>
+    <div class="content">
+      <template id={`tmpl-${randomId}`}>
+        <slot />
+      </template>
+    </div>
+  </details>
+
+  <script is:inline define:vars={{ randomId }}>
+    const summary = document.getElementById(randomId)
+    const details = summary?.parentElement
+    const template = document.getElementById(`tmpl-${randomId}`)
+    const content = details?.querySelector(".content")
+
+    details?.addEventListener(
+      "toggle",
+      () => {
+        if (details.open && template && content) {
+          content.appendChild(template.content.cloneNode(true))
+          template.remove()
+        }
+      },
+      { once: true },
+    )
+  </script>
+</div>
+
+<style lang="scss">
+  .lazy-fold summary {
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+
+    &::marker {
+      color: var(--accent-color);
+    }
+  }
+
+  .lazy-fold .content {
+    margin-top: 0.5rem;
+  }
+</style>

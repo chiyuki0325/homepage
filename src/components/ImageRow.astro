@@ -1,0 +1,18 @@
+<div class="image-row">
+  <slot />
+</div>
+
+<style is:global>
+  .image-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .image-row img {
+    flex: 1;
+    width: 0;
+    object-fit: cover;
+  }
+</style>

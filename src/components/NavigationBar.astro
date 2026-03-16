@@ -2,21 +2,32 @@
 interface NavItem {
   name: string
   href: string
+  newTab?: boolean
 }
 
 const navItems: NavItem[] = [
   { name: "主页", href: "/" },
-  { name: "博客", href: "https://blog.chyk.ink" },
+  { name: "博客", href: "https://blog.chyk.ink", newTab: true },
   { name: "项目", href: "/projects" },
   { name: "留言板", href: "/guestbook" },
   { name: "联系我", href: "/contact" },
 ]
 
-const { activated = "/" } = Astro.props;
+const { activated = "/" } = Astro.props
 ---
 
 <nav>
-  {navItems.map(({ name, href }) => <a href={href} class={href === activated ? "active" : ""} data-astro-prefetch>{name}</a>)}
+  {
+    navItems.map(({ name, href, newTab }) => (
+      <a
+        href={href}
+        class={href === activated ? "active" : ""}
+        data-astro-prefetch
+        target={newTab ? "_blank" : undefined}
+        rel={newTab ? "noopener noreferrer" : undefined}
+      >{name}</a>
+    ))
+  }
 </nav>
 
 <style lang="scss">
@@ -30,6 +41,19 @@ const { activated = "/" } = Astro.props;
     position: fixed;
     translate: -2rem 0;
 
+    @media (max-width: 600px) {
+      writing-mode: horizontal-tb;
+      text-orientation: initial;
+      width: var(--page-width);
+      box-sizing: border-box;
+      height: 2rem;
+      translate: 0;
+      margin: 0;
+      position: absolute;
+      
+      top: 14rem
+    }
+
     &::after {
       content: "";
       display: block;
@@ -38,6 +62,13 @@ const { activated = "/" } = Astro.props;
       background-color: #1a1f3526;
       position: relative;
       left: calc(2.5rem + 2px);
+
+      @media (max-width: 600px) {
+        width: var(--page-width);
+        height: 2px;
+        left: 0;
+        top: 0.5rem;
+      }
     }
   }
 
@@ -46,6 +77,10 @@ const { activated = "/" } = Astro.props;
     color: inherit;
     margin-bottom: 1.5rem;
     position: relative;
+
+    @media (max-width: 600px) {
+      margin: 0 1.2rem 0 0;
+    }
 
     &::after {
       content: "";
@@ -57,10 +92,26 @@ const { activated = "/" } = Astro.props;
       top: 0;
       left: 2.5rem;
       transition: height 0.3s ease;
+
+      @media (max-width: 600px) {
+        width: 0;
+        height: 2px;
+
+        left: 0;
+        bottom: calc(-0.5rem - 2px);
+        top: initial;
+        transition: width 0.3s ease;
+      }
     }
 
-    &:hover::after, &.active::after {
+    &:hover::after,
+    &.active::after {
       height: 100%;
+      
+      @media (max-width: 600px) {
+        width: 100%;
+        height: 2px;
+      }
     }
   }
 </style>

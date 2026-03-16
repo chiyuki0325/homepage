@@ -1,0 +1,62 @@
+import LazyFold from "@components/LazyFold.astro"
+import ImageRow from "@components/ImageRow.astro"
+
+这里是我参与和折腾过的一些项目。
+
+### 🪪 NEU Pass | 2024.12 - ?
+
+NEU 的官方校园 App《智慧东大》采用 UniApp 开发，流畅度和可用性都很一般，影响日常生活体验。
+
+NEU Pass 是我使用 Jetpack Compose 开发的《智慧东大》安卓原生客户端，支持一码通、课程表、校园跑等常用核心功能，提供更流畅的使用体验。即使在拥挤的食堂也能实现毫秒级启动。此外，还支持缓存和深色模式等现代刚需特性。
+
+为避嫌，本项目仅供个人使用，并没有对外发布。
+
+<LazyFold title="应用截图">
+  <ImageRow>
+    <img src="/img/projects/pass1.webp" alt="NEU Pass 截图 1" />
+    <img src="/img/projects/pass2.webp" alt="NEU Pass 截图 2" />
+    <img src="/img/projects/pass3.webp" alt="NEU Pass 截图 3" />
+  </ImageRow>
+</LazyFold>
+
+<br/>
+
+### 💻 小米平板 5 AOSC OS 移植 | 2024.6 - 2026.3 ?
+
+小米平板 5 是一款性价比极高的安卓平板，搭载了高通骁龙 860 处理器，适合日常使用和轻度生产力任务。
+
+目前社区已有 6.1.10、主线 6.14 内核的移植版本，已有 Fedora Silverblue 系统移植镜像。
+
+我采用 AOSC OS 的 Linux 源码树和多个 BSP 内核的补丁，跑起了 [AOSC OS](https://aosc.io/) 的最新版本，支持 Wi-Fi、蓝牙、触控、显示等核心功能，已当作日用机器使用一年有余。
+
+➡️ [源码](https://github.com/chiyuki0325/sm8150-mainline/tree/sm8150/6.16.12)
+
+<br/>
+
+### ✨ Stellaris | 2023.3 - 2024.12
+
+Stellaris 是一款 Hexo 博客主题，派生自 Stellar 1.12.0 版本，基于 hexo-renderer-jsx 构建，支持丰富的标签和动态数据组件，帮助您简单从容地应对各种表达需求。
+
+出于我的个人喜好，本主题的样式主要参考了微软 Fluent Design 2 设计语言。主题也提供很大的自定义空间，助您构建符合心意的博客。
+
+博客上线三年以来，Stellaris提升了我的创作广度和功能性，也提升了浏览者的阅读体验。
+
+➡️ [访问博客](https://blog.chyk.ink) | [用户文档](https://blog.chyk.ink/wiki/stellaris) | [源码](https://github.com/chiyuki0325/hexo-theme-stellaris)
+
+<br/>
+
+### 🎼 Lyrica | 2024.4 - 2025.8
+
+Lyrica 是一个简洁轻量省内存的 Linux 桌面歌词显示软件，使用 Rust 🦀 编写，采取前后端分离、歌词源分离的设计。
+
+支持 Linux 平台主流音乐播放器的歌词源，并采取网易云音乐作为回落。前端目前支持 KDE 桌面环境，提供多种自定义选项。前端 + 后端占用内存仅 50MB 左右。
+
+项目的名字来源于东方 Project 的角色莉莉卡·普莉兹姆利巴。
+
+Lyrica 是我高三时顶着压力写出来的，代码质量一般，正在计划重构。
+
+➡️ [立即安装](https://github.com/chiyuki0325/lyrica/blob/next/docs/BUILD.md) | [源码](https://github.com/chiyuki0325/lyrica)
+
+<br/>
+
+更早的和不再维护的项目，就不放在这里了。我还在积极学习和构建中，希望未来能写出更多有趣有用的东西。

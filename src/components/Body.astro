@@ -23,7 +23,7 @@ const { activated = "/" } = Astro.props
 
 <script>
   import LetItSnow from "../scripts/snowflakes.js"
-  const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
   const snow = new LetItSnow("#snow", {
     speed: 0.7,
     count: 150,
@@ -32,7 +32,7 @@ const { activated = "/" } = Astro.props
     windPower: 1,
     opacity: isDarkMode ? -0.2 : 0,
   })
-</script> 
+</script>
 
 <style lang="scss" is:global>
   body {
@@ -55,6 +55,8 @@ const { activated = "/" } = Astro.props
     --font-color: var(--light-font-color);
     --accent-color: var(--light-accent-color);
 
+    --page-width: min(90vw, 1000px);
+
     margin: 0;
     padding: 0;
     background: var(--background);
@@ -72,8 +74,13 @@ const { activated = "/" } = Astro.props
   .main {
     display: flex;
     flex-direction: row;
-    width: min(95vw, 1000px);
+    width: var(--page-width);
     gap: 5rem;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+      gap: 0
+    }
   }
 
   .content-wrapper {
@@ -83,7 +90,8 @@ const { activated = "/" } = Astro.props
   }
 
   .slot-wrapper {
-    margin: 2rem 0;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
   }
 
   html {
@@ -119,6 +127,19 @@ const { activated = "/" } = Astro.props
   p {
     line-height: 1.6;
     margin: 0.6rem 0;
+  }
+
+  blockquote {
+    margin: 1rem 0;
+    padding-left: 1rem;
+    border-left: 2px solid var(--accent-color);
+    /*
+    color: color-mix(
+      in srgb,
+      var(--light-font-color),
+      var(--light-background-color) 50%
+    );
+    */
   }
 
   #snow {
