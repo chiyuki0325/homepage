@@ -1,0 +1,29 @@
+---
+import InlineImg from "./InlineImg.astro"
+import "../fonts/DeluxeRating.css"
+
+const { rating = 15450 } = Astro.props
+---
+
+<span class="deluxe-rating-outer">
+  <InlineImg src="/img/dxrating.webp" alt="Deluxe Rating" />
+  <span class="deluxe-rating">{rating}</span>
+</span>
+
+<style>
+    .deluxe-rating-outer {
+        position: relative;
+        display: inline-block;
+    }
+
+    .deluxe-rating {
+        font-family: "Deluxe Rating", monospace;
+        font-weight: 700;
+        color: #ffde44;
+
+        font-size: 0.85rem;
+        position: absolute;
+        right: 0.95rem;
+        top: 0.1rem;
+    }
+</style>

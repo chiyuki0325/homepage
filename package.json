@@ -12,6 +12,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/mdx": "^5.0.0",
     "astro": "^6.0.4",
     "lxgw-wenkai-lite-webfont": "^1.7.0",
     "sass": "^1.98.0"
