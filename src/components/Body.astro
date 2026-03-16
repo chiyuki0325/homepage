@@ -1,18 +1,19 @@
 ---
-import { ClientRouter } from "astro:transitions";
+import { ClientRouter } from "astro:transitions"
 import Header from "./Header.astro"
 import NavigationBar from "./NavigationBar.astro"
-
 const { activated = "/" } = Astro.props
 ---
+
 <ClientRouter />
 
 <body>
   <div class="main">
+    <canvas id="snow" transition:persist></canvas>
     <div id="nav-placeholder"></div>
     <NavigationBar activated={activated} />
     <div class="content-wrapper">
-      <Header />
+      <Header transition:persist />
       <div class="slot-wrapper">
         <slot />
       </div>
@@ -20,9 +21,22 @@ const { activated = "/" } = Astro.props
   </div>
 </body>
 
+<script>
+  import LetItSnow from "../scripts/snowflakes.js"
+  const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  const snow = new LetItSnow("#snow", {
+    speed: 0.7,
+    count: 150,
+    size: 3,
+    color: "#fff",
+    windPower: 1,
+    opacity: isDarkMode ? -0.2 : 0,
+  })
+</script> 
+
 <style lang="scss" is:global>
   body {
-    --light-background: #f3f3f3 radial-gradient(#eff4f9 75%, #f3f3f3 100%)
+    --light-background: #eef4f5 radial-gradient(#e4ecf5 75%, #eef4f5 100%)
       no-repeat fixed;
     --dark-background: #202020 radial-gradient(#1a1f35 25%, #202020 100%)
       no-repeat fixed;
@@ -97,8 +111,24 @@ const { activated = "/" } = Astro.props
       font-size: 14px;
     }
   }
-  
+
   a {
     color: inherit;
+  }
+
+  p {
+    line-height: 1.6;
+    margin: 0.6rem 0;
+  }
+
+  #snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: -1;
+    display: block;
   }
 </style>
