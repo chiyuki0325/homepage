@@ -3,11 +3,11 @@ import ImageRow from "@components/ImageRow.astro"
 
 这里是我参与和折腾过的一些项目。
 
-### 🪪 NEU Pass | 2024.12 - ?
+### 🪪 NEU Pass
 
 NEU 的官方校园 App《智慧东大》采用 UniApp 开发，流畅度和可用性都很一般，影响日常生活体验。
 
-NEU Pass 是我使用 Jetpack Compose 开发的《智慧东大》安卓原生客户端，支持一码通、课程表、校园跑等常用核心功能，提供更流畅的使用体验。即使在拥挤的食堂也能实现毫秒级启动。此外，还支持缓存和深色模式等现代刚需特性。
+NEU Pass 是我使用 Kotlin Multiplatform 开发的《智慧东大》替代客户端，支持一码通、课程表、校园跑等常用核心功能，提供更流畅的使用体验。即使在拥挤的食堂也能实现毫秒级启动。此外，还支持跨平台、缓存和深色模式等现代刚需特性。
 
 为避嫌，本项目仅供个人使用，并没有对外发布。
 
@@ -21,19 +21,17 @@ NEU Pass 是我使用 Jetpack Compose 开发的《智慧东大》安卓原生客
 
 <br/>
 
-### 💻 小米平板 5 AOSC OS 移植 | 2024.6 - 2026.3 ?
+### ❄️ Edelweiss
 
-小米平板 5 是一款性价比极高的安卓平板，搭载了高通骁龙 860 处理器，适合日常使用和轻度生产力任务。
+Edelweiss 是一个 Telegram / QQ 群聊智能体机器人，基于 Cahciua 二次开发，由 LLM 自己判断何时参与对话。它能在群里自然地聊天、补充信息，也能执行长程任务。
 
-目前社区已有 6.1.10、主线 6.14 内核的移植版本，已有 Fedora Silverblue 系统移植镜像。
+我为它进行了大量重构，拓展了 IM 消息抽象层，通过 OneBot v11 协议接入 QQ 平台，并针对 DeepSeek V4 做了口癖抑制、消息长度限制等针对性优化；基于小米 MiMo 多模态模型实现了识图，能描述图片、回答关于图片的问题；还加入了技能文件、subagent 与「信箱」系统等现代 agent 基本特性。
 
-我采用 AOSC OS 的 Linux 源码树和多个 BSP 内核的补丁，跑起了 [AOSC OS](https://aosc.io/) 的最新版本，支持 Wi-Fi、蓝牙、触控、显示等核心功能，已当作日用机器使用一年有余。
-
-➡️ [源码](https://github.com/chiyuki0325/sm8150-mainline/tree/sm8150/6.16.12)
+➡️ [Telegram 实例「小冰猫」](https://t.me/IcyEdelweissBot) | [源码](https://github.com/chiyuki0325/Edelweiss)
 
 <br/>
 
-### ✨ Stellaris | 2023.3 - 2024.12
+### ✨ Stellaris
 
 Stellaris 是一款 Hexo 博客主题，派生自 Stellar 1.12.0 版本，基于 hexo-renderer-jsx 构建，支持丰富的标签和动态数据组件，帮助您简单从容地应对各种表达需求。
 
@@ -45,15 +43,13 @@ Stellaris 是一款 Hexo 博客主题，派生自 Stellar 1.12.0 版本，基于
 
 <br/>
 
-### 🎼 Lyrica | 2024.4 - 2025.8
+### 🎼 Lyrica
 
 Lyrica 是一个简洁轻量省内存的 Linux 桌面歌词显示软件，使用 Rust 🦀 编写，采取前后端分离、歌词源分离的设计。
 
-支持 Linux 平台主流音乐播放器的歌词源，并采取网易云音乐作为回落。前端目前支持 KDE 桌面环境，提供多种自定义选项。前端 + 后端占用内存仅 50MB 左右。
+支持 Linux 平台主流音乐播放器的歌词源，并采取网易云音乐作为回落。前端目前支持 KDE 桌面环境，提供多种自定义选项。前端 + 后端占用内存仅 20MB 左右。
 
 项目的名字来源于东方 Project 的角色莉莉卡·普莉兹姆利巴。
-
-Lyrica 是我高三时顶着压力写出来的，代码质量一般，正在计划重构。
 
 ➡️ [立即安装](https://github.com/chiyuki0325/lyrica/blob/next/docs/BUILD.md) | [源码](https://github.com/chiyuki0325/lyrica)
 
